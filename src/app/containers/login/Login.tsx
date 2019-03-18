@@ -5,19 +5,16 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as authActions from '../../actions/auth';
 import { Dispatch } from '../../constants/action-types';
-import { AuthState } from '../../reducers/auth';
 
-type Props = typeof authActions & ConnectedRouterProps
+type Props = typeof authActions & ConnectedRouterProps;
 
 const LoginComponent = (props: Props) => {
-  console.log(props);
-  const scope = 'email profile openid https://www.googleapis.com/auth/books';
+  const scope = "email profile openid https://www.googleapis.com/auth/books";
 
   const onSuccess = (res: GoogleLoginResponse | GoogleLoginResponseOffline) => {
     if ((res as GoogleLoginResponse).getAuthResponse) {
       props.fetchAuthSuccess((res as GoogleLoginResponse).getAuthResponse());
-      props.history.push('/home');
-      console.log(res);
+      props.history.push("/home");
     }
   };
 
