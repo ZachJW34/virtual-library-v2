@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.thumbnail {
+  height: 9rem;
+  width: 5.4rem;
+  border-radius: 0.25rem;
+}
+
+.description {
+  margin-left: 1rem;
+}
+
+.title {
+  width: 12rem;
+}
+
+.authors {
+  width: 10rem;
+}

@@ -1,41 +1,28 @@
-import { ConnectedRouter, ConnectedRouterProps } from 'connected-react-router';
-import React, { FunctionComponent } from 'react';
-import { connect } from 'react-redux';
-import { BrowserRouter, Redirect } from 'react-router-dom';
-import { State } from '../../reducers';
+import { ConnectedRouter } from 'connected-react-router';
+import React from 'react';
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  Switch
+  } from 'react-router-dom';
+import HomeComponent from '../../containers/home/Home';
+import LoginComponent from '../../containers/login/Login';
 import { history } from '../../reducers/history';
-import { PrivateRouteComponent } from '../private-routes/PrivateRoutes';
-import { PublicRoutesComponent } from '../public-routes/PublicRoutes';
 
-type RouteComponentProps = {
-  accessToken: string;
-} & ConnectedRouterProps;
+const RoutesComponent: React.FC<{}> = () => {
 
-const RoutesComponent: FunctionComponent<RouteComponentProps> = props => {
   return (
     <ConnectedRouter history={history}>
       <BrowserRouter>
-        {props.accessToken ? (
-          <PrivateRouteComponent />
-        ) : (
-          <>
-            <PublicRoutesComponent />
-            <Redirect to="/login" />
-          </>
-        )}
+        <Switch>
+          <Route path="/login" component={LoginComponent} />
+          <Route path="/home" component={HomeComponent} />
+          <Redirect to="/home" />
+        </Switch>
       </BrowserRouter>
     </ConnectedRouter>
   );
 };
 
-const mapStateToProps = (state: State, ownProps: any) => {
-  return {
-    accessToken: state.auth.access_token,
-    ...ownProps
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  null
-)(RoutesComponent);
+export default RoutesComponent;

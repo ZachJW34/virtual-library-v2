@@ -5,7 +5,7 @@ export interface BookshelvesResponse {
 
 export interface Bookshelf {
   kind: string;
-  id: number;
+  id: string;
   selfLink: string;
   title: string;
   access: string;
@@ -13,4 +13,9 @@ export interface Bookshelf {
   created: string;
   volumeCount: number;
   volumesLastUpdated: string;
+}
+
+export type AddVolumeToBookshelfParams = {
+  volumeId: string,
+  bookshelfId: string
 }

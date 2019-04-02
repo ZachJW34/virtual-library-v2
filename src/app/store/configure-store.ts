@@ -1,8 +1,8 @@
 import { routerMiddleware } from 'connected-react-router';
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import * as authActions from '../actions/auth';
 import * as bookshelvesActions from '../actions/bookshelves';
+import * as userActions from '../actions/user';
 import { rootReducer } from '../reducers';
 import { history } from '../reducers/history';
 
@@ -10,8 +10,8 @@ export const configureStore = () => {
   const middleWare = [];
   const enhancers = [];
   const actionCreators = {
-    ...authActions,
-    ...bookshelvesActions
+    ...bookshelvesActions,
+    ...userActions
   };
 
   middleWare.push(thunk);

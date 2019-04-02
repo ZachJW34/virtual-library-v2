@@ -1,0 +1,9 @@
+.volumes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.volume-tile {
+  margin-bottom: 2rem;
+}

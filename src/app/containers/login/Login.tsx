@@ -3,17 +3,32 @@ import React from 'react';
 import GoogleLogin, { GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as authActions from '../../actions/auth';
+import * as userActions from '../../actions/user';
 import { Dispatch } from '../../constants/action-types';
+import { setAccessToken } from '../../utils/tokenHelper';
 
-type Props = typeof authActions & ConnectedRouterProps;
+type Props = {
+  fetchUserSuccess: typeof userActions.fetchUserSuccess
+} & ConnectedRouterProps;
 
 const LoginComponent = (props: Props) => {
-  const scope = "email profile openid https://www.googleapis.com/auth/books";
+  const scope =
+    "email profile openid https://www.googleapis.com/auth/books https://www.googleapis.com/auth/drive";
 
   const onSuccess = (res: GoogleLoginResponse | GoogleLoginResponseOffline) => {
-    if ((res as GoogleLoginResponse).getAuthResponse) {
-      props.fetchAuthSuccess((res as GoogleLoginResponse).getAuthResponse());
+    const auth = res as GoogleLoginResponse;
+    console.log(auth);
+    if (auth.getAuthResponse) {
+      const { access_token, expires_at } = auth.getAuthResponse();
+      setAccessToken(access_token, expires_at);
+
+      const userProfile = auth.getBasicProfile();
+      props.fetchUserSuccess({
+        name: userProfile.getName(),
+        email: userProfile.getEmail(),
+        imageUrl: userProfile.getImageUrl(),
+        id: userProfile.getId()
+      });
       props.history.push("/home");
     }
   };
@@ -33,10 +48,6 @@ const LoginComponent = (props: Props) => {
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch) =>
-  bindActionCreators(authActions, dispatch);
+const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators(userActions, dispatch);
 
-export default connect<ConnectedRouterProps, typeof authActions>(
-  null,
-  mapDispatchToProps
-)(LoginComponent);
+export default connect(null, mapDispatchToProps)(LoginComponent);

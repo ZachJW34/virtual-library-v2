@@ -1,12 +1,15 @@
-export interface VolumeSearchParams {
+export interface VolumeSearchParams extends VolumeSearchOptionalParams {
     q: string;
-    intitle?: string
-    inauthor?: string
-    inpublisher?: string
-    subject?: string
-    isbn?: string
-    lccn?: string
-    oclc?: string
+}
+
+export interface VolumeSearchOptionalParams {
+  intitle?: string
+  inauthor?: string
+  inpublisher?: string
+  subject?: string
+  isbn?: string
+  lccn?: string
+  oclc?: string
 }
 
 export interface VolumeSearchResponse {
@@ -47,6 +50,8 @@ export interface VolumeInfo {
     previewLink: string;
     infoLink: string;
     canonicalVolumeLink: string;
+    averageRating: number;
+    ratingsCount: number;
 }
 
 export interface IndustryIdentifiersEntity {
