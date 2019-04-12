@@ -4,6 +4,7 @@ import uuid from 'uuid';
 
 type Props = {
   rating: number;
+  color: string;
 };
 
 const RatingsComponent: React.FC<Props> = props => {
@@ -30,8 +31,8 @@ const RatingsComponent: React.FC<Props> = props => {
                 y1="0%"
                 y2="0%"
               >
-                <stop offset="0%" stopColor="gold" />
-                <stop offset={`${fill}%`} stopColor="gold" />
+                <stop offset="0%" stopColor={props.color} />
+                <stop offset={`${fill}%`} stopColor={props.color} />
                 <stop offset={`${fill}.1%`} stopColor="#eae9e9" />
                 <stop offset="100%" stopColor="#eae9e9" />
               </linearGradient>

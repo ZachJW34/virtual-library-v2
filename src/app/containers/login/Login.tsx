@@ -17,7 +17,6 @@ const LoginComponent = (props: Props) => {
 
   const onSuccess = (res: GoogleLoginResponse | GoogleLoginResponseOffline) => {
     const auth = res as GoogleLoginResponse;
-    console.log(auth);
     if (auth.getAuthResponse) {
       const { access_token, expires_at } = auth.getAuthResponse();
       setAccessToken(access_token, expires_at);

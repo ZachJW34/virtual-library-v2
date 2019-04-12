@@ -1,7 +1,8 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import './App.css';
+import styles from './App.module.css';
+import NavbarComponent from './components/navbar/Navbar';
 import RoutesComponent from './components/routes/Routes';
 import { configureStore } from './store/configure-store';
 
@@ -12,7 +13,10 @@ class App extends Component {
     return (
       <Provider store={store}>
         <CssBaseline />
-        <RoutesComponent />
+        <NavbarComponent />
+        <div className={styles.container} >
+          <RoutesComponent />
+        </div>
       </Provider>
     );
   }

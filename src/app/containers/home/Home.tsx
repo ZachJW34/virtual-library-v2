@@ -4,6 +4,7 @@ import React, { FunctionComponent, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link, Redirect, Route } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
+import styles from './Home.module.css';
 import * as bookshelvesActions from '../../actions/bookshelves';
 import { Dispatch, LOADING_TYPES } from '../../constants/action-types';
 import { getUpdateState, State } from '../../reducers';
@@ -18,18 +19,16 @@ type Props = {
 
 const HomeComponent: FunctionComponent<Props> = props => {
   const redirect = !isAccessTokenValid() ? <Redirect to="/login" /> : null;
-  console.log(props.updateState);
 
   useEffect(() => {
-    console.log('Lifecycle test');
     props.fetchBookshelves();
   }, []);
 
   const mainTemplate = (
-    <>
+    <div className={styles.container}>
       <Link to="/home/bookshelves">Bookshelves</Link>
       <Route path="/home/bookshelves" component={Bookshelves} />
-    </>
+    </div>
   );
 
   return (

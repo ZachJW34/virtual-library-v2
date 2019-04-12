@@ -11,7 +11,7 @@ export const configureStore = () => {
   const enhancers = [];
   const actionCreators = {
     ...bookshelvesActions,
-    ...userActions
+    ...userActions,
   };
 
   middleWare.push(thunk);

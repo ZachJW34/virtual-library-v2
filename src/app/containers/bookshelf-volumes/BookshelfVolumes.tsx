@@ -45,7 +45,7 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
       <div className={styles["volumes-container"]}>
         {props.volumes.map(volume => (
           <div key={volume.id} className={styles["volume-tile"]}>
-            <VolumeTileComponent volume={volume} />
+            <VolumeTileComponent volume={volume} deleteVolume={deleteVolumeFromBookshelf}/>
           </div>
         ))}
       </div>
@@ -73,7 +73,6 @@ const mapStateToProps = (
 ) => ({
   bookshelf: getBookshelfById(state, ownProps.match.params.bookshelfId),
   volumes: getVolumesByBookshelfId(state, ownProps.match.params.bookshelfId),
-  // accessToken: getAccessToken(state),
   ...ownProps
 });
 

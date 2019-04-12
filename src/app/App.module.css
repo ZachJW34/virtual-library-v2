@@ -1,0 +1,10 @@
+.container {
+  height: calc(100% - 3rem);
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar { 
+  display: none;
+}

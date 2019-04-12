@@ -32,18 +32,27 @@ export const fetchAddVolumeToBookshelf = (
       return dispatch(push('/login'));
     }
     dispatch(fetchAddVolumeToBookshelfRequest());
-    const headers = getAuthHeader();
-    const response = await fetch(
-      `/bookshelves/add-volume${addQueryParams({
-        bookshelfId,
-        volumeId: volume.id
-      })}`,
-      { headers }
-    );
-    const body: { didSucceed: boolean } = await response.json();
-    return body.didSucceed
-      ? dispatch(fetchAddVolumeToBookshelfSuccess({ bookshelfId, volume }))
-      : dispatch(fetchAddVolumeToBookshelfFailure());
+    try {
+      const response = await fetch('/bookshelves/add-volume', {
+        method: 'POST',
+        headers: {
+          ...getAuthHeader(),
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify({bookshelfId, volume})
+      })
+      // const body: { didSucceed: boolean } = await response.json();
+      console.log(response);
+      if (response.ok) {
+        const body: Volume = await response.json();
+        console.log(body);
+        return dispatch(fetchAddVolumeToBookshelfSuccess({ bookshelfId, volume: body }))
+      } else {
+        return dispatch(fetchAddVolumeToBookshelfFailure());
+      }
+    } catch(e) {
+      return dispatch(fetchAddVolumeToBookshelfFailure());
+    }
   };
 };
 
