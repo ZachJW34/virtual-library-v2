@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  cursor: pointer;
 }
 
 .thumbnail {
@@ -18,4 +19,8 @@
 
 .authors {
   width: 10rem;
+}
+
+.delete {
+  z-index: 1;
 }

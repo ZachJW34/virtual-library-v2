@@ -1,25 +1,41 @@
-import { push } from 'connected-react-router';
-import React, { FunctionComponent, useEffect } from 'react';
-import { connect } from 'react-redux';
-import { Link, Route } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
-import BookshelfTile from '../../components/bookshelf-tile/BookshelfTile';
-import { Dispatch } from '../../constants/action-types';
-import { Bookshelf } from '../../models/google-bookshelves';
-import { getBookshelves, State } from '../../reducers';
-import BookshelfVolumes from '../bookshelf-volumes/BookshelfVolumes';
+import React, { FunctionComponent } from "react";
+import { Route } from "react-router-dom";
+import { Bookshelf } from "../../models/google-bookshelves";
+import BookshelfVolumes from "../bookshelf-volumes/BookshelfVolumes";
+import { Tabs } from "@material-ui/core";
+import TabWithLink from "../../components/tab-with-link/TabWithLink";
 
 type Props = {
+  startTab: string | undefined;
   bookshelves: Bookshelf[];
-  push: typeof push;
 };
 
 const BookshelvesComponent: FunctionComponent<Props> = props => {
+  const [tab, setTab] = React.useState(
+    props.startTab
+      ? props.startTab
+      : props.bookshelves[0]
+      ? props.bookshelves[0].id
+      : undefined
+  );
+
   return (
     <div>
-      {props.bookshelves.map(bookshelf => (
-        <BookshelfTile key={bookshelf.id} bookshelf={bookshelf} />
-      ))}
+      <Tabs
+        value={tab}
+        onChange={(event, value) => setTab(value)}
+        variant="fullWidth"
+        centered={true}
+      >
+        {props.bookshelves.map(bookshelf => (
+          <TabWithLink
+            value={bookshelf.id}
+            key={bookshelf.id}
+            to={`/home/bookshelves/${bookshelf.id}`}
+            label={bookshelf.title}
+          />
+        ))}
+      </Tabs>
       <Route
         path="/home/bookshelves/:bookshelfId"
         component={BookshelfVolumes}
@@ -28,14 +44,4 @@ const BookshelvesComponent: FunctionComponent<Props> = props => {
   );
 };
 
-const mapStateToProps = (state: State) => ({
-  bookshelves: getBookshelves(state)
-});
-
-const mapDispatchToProps = (dispatch: Dispatch) =>
-  bindActionCreators({ push }, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BookshelvesComponent);
+export default BookshelvesComponent;

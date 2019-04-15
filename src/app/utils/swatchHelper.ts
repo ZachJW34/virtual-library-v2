@@ -1,6 +1,10 @@
-import { Palette } from '../models/palette';
+import { Palette } from "../models/palette";
 
-export const getVibrant = (palette: Palette, fallback: string) => {
+export const getVibrant = (
+  palette: Palette,
+  fallback: string,
+  opacity?: number
+) => {
   if (!palette) {
     return fallback;
   }
@@ -17,14 +21,20 @@ export const getVibrant = (palette: Palette, fallback: string) => {
     : palette.DarkMuted
     ? palette.DarkMuted
     : undefined;
-  return swatch ? rgbToHex(...swatch.rgb) : fallback;
+  return swatch
+    ? rgbToHex(
+        swatch.rgb[0],
+        swatch.rgb[1],
+        swatch.rgb[2],
+        opacity ? opacity : 1
+      )
+    : fallback;
 };
 
-function componentToHex(c: number) {
-  var hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
-}
+// function componentToHex(c: number) {
+//   var hex = c.toString(16);
+//   return hex.length == 1 ? "0" + hex : hex;
+// }
 
-function rgbToHex(r: number, g: number, b: number) {
-  return "#" + componentToHex(Math.floor(r)) + componentToHex(Math.floor(g)) + componentToHex(Math.floor(b));
-}
+const rgbToHex = (r: number, g: number, b: number, o: number) =>
+  `rgba(${r},${g},${b},${o})`;

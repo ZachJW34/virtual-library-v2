@@ -2,8 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 1rem;
 }
 
 .volume-tile {
   margin-bottom: 2rem;
+}
+
+.selected {
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  height: 290px;
 }

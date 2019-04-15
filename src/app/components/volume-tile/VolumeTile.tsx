@@ -1,20 +1,24 @@
-import { IconButton } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import { Delete } from '@material-ui/icons';
-import React from 'react';
-import styles from './VolumeTile.module.css';
-import { Volume } from '../../models/google-volumes';
-import { getVibrant } from '../../utils/swatchHelper';
-import RatingsComponent from '../ratings/Ratings';
+import { IconButton } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
+import { Delete } from "@material-ui/icons";
+import React from "react";
+import styles from "./VolumeTile.module.css";
+import { Volume } from "../../models/google-volumes";
+import { getVibrant } from "../../utils/swatchHelper";
+import RatingsComponent from "../ratings/Ratings";
 
 type Props = {
   volume: Volume;
+  selectVolume: (volume: Volume) => void;
   deleteVolume?: (volume: Volume) => void;
 };
 
 const VolumeTileComponent: React.FC<Props> = props => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      onClick={() => props.selectVolume(props.volume)}
+    >
       <img
         id={props.volume.id}
         className={styles.thumbnail}
@@ -39,8 +43,15 @@ const VolumeTileComponent: React.FC<Props> = props => {
           color={getVibrant(props.volume.volumeInfo.palette, "gold")}
         />
         {!!props.deleteVolume ? (
-          <div>
-            <IconButton onClick={() => props.deleteVolume ? props.deleteVolume(props.volume) : (() => null)}>
+          <div className={styles.delete}>
+            <IconButton
+              onClick={event => {
+                event.stopPropagation();
+                return props.deleteVolume
+                  ? props.deleteVolume(props.volume)
+                  : () => null;
+              }}
+            >
               <Delete />
             </IconButton>
           </div>
