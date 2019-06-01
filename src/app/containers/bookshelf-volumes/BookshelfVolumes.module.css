@@ -12,6 +12,4 @@
 .selected {
   display: flex;
   justify-content: center;
-  width: 480px;
-  height: 290px;
 }

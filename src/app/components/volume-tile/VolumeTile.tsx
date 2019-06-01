@@ -1,11 +1,11 @@
-import { IconButton } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
-import { Delete } from "@material-ui/icons";
-import React from "react";
-import styles from "./VolumeTile.module.css";
-import { Volume } from "../../models/google-volumes";
-import { getVibrant } from "../../utils/swatchHelper";
-import RatingsComponent from "../ratings/Ratings";
+import { IconButton } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import { Delete } from '@material-ui/icons';
+import React from 'react';
+import styles from './VolumeTile.module.css';
+import { Volume } from '../../models/google-volumes';
+import { getVibrant } from '../../utils/swatchHelper';
+import RatingsComponent from '../ratings/Ratings';
 
 type Props = {
   volume: Volume;
@@ -40,7 +40,8 @@ const VolumeTileComponent: React.FC<Props> = props => {
         </Typography>
         <RatingsComponent
           rating={props.volume.volumeInfo.averageRating}
-          color={getVibrant(props.volume.volumeInfo.palette, "gold")}
+          startColor={getVibrant(props.volume.volumeInfo.palette, "gold")}
+          endColor="#eae9e9"
         />
         {!!props.deleteVolume ? (
           <div className={styles.delete}>

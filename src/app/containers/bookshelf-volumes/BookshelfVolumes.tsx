@@ -1,26 +1,18 @@
-import React, { useState } from "react";
-import { connect } from "react-redux";
-import { RouteComponentProps } from "react-router";
-import { bindActionCreators } from "redux";
-import styles from "./BookshelfVolumes.module.css";
-import * as bookshelvesActions from "../../actions/bookshelves";
-import { VolumeSearchFormComponent } from "../../components/volume-search-form/VolumeSearchForm";
-import VolumeTileComponent from "../../components/volume-tile/VolumeTile";
-import { Dispatch } from "../../constants/action-types";
-import { Bookshelf } from "../../models/google-bookshelves";
-import {
-  Volume,
-  VolumeSearchParams,
-  VolumeSearchResponse
-} from "../../models/google-volumes";
-import {
-  getBookshelfById,
-  getVolumesByBookshelfId,
-  State
-} from "../../reducers";
-import { addQueryParams } from "../../utils/fetchHelper";
-import { getVibrant } from "../../utils/swatchHelper";
-import VolumeHighlightComponent from "../../components/volume-highlight/VolumeHighlight";
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { RouteComponentProps } from 'react-router';
+import { bindActionCreators } from 'redux';
+import styles from './BookshelfVolumes.module.css';
+import * as bookshelvesActions from '../../actions/bookshelves';
+import VolumeHighlightComponent from '../../components/volume-highlight/VolumeHighlight';
+import { VolumeSearchFormComponent } from '../../components/volume-search-form/VolumeSearchForm';
+import VolumeTileComponent from '../../components/volume-tile/VolumeTile';
+import { Dispatch } from '../../constants/action-types';
+import { Bookshelf } from '../../models/google-bookshelves';
+import { Volume, VolumeSearchParams, VolumeSearchResponse } from '../../models/google-volumes';
+import { getBookshelfById, getVolumesByBookshelfId, State } from '../../reducers';
+import { addQueryParams } from '../../utils/fetchHelper';
+import { getVibrant } from '../../utils/swatchHelper';
 
 type Props = {
   bookshelf: Bookshelf;
@@ -35,6 +27,8 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   const [selectedVolume, setSelectedVolume] = useState(
     !!props.volumes.length ? props.volumes[0] : undefined
   );
+
+  useEffect(() => setSelectedVolume(!!props.volumes.length ? props.volumes[0] : undefined), [props.volumes])
 
   const searchVolumes = (params: VolumeSearchParams) => {
     fetch(`/volumes${addQueryParams(params)}`, {
@@ -60,11 +54,10 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   return (
     <div>
       {selectedVolume ? (
-        <VolumeHighlightComponent volume={selectedVolume} />
+        <div className={styles.selected}>
+          <VolumeHighlightComponent volume={selectedVolume} />
+        </div>
       ) : null}
-      {/* <div className={styles.selected} styles={{ backgroundColor: selectedVolume. }}>
-
-      </div> */}
       <div className={styles["volumes-container"]}>
         {props.volumes.map(volume => (
           <div key={volume.id} className={styles["volume-tile"]}>
