@@ -1,0 +1,135 @@
+{
+  "7": {
+    "kind": "books#bookshelf",
+    "id": "7",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/7",
+    "title": "My Google eBooks",
+    "access": "PRIVATE",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 4,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "1": {
+    "kind": "books#bookshelf",
+    "id": "1",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/1",
+    "title": "Purchased",
+    "access": "PRIVATE",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "5": {
+    "kind": "books#bookshelf",
+    "id": "5",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/5",
+    "title": "Reviewed",
+    "access": "PUBLIC",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "6": {
+    "kind": "books#bookshelf",
+    "id": "6",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/6",
+    "title": "Recently viewed",
+    "access": "PRIVATE",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "9": {
+    "kind": "books#bookshelf",
+    "id": "9",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/9",
+    "title": "Browsing history",
+    "access": "PRIVATE",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "0": {
+    "kind": "books#bookshelf",
+    "id": "0",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/0",
+    "title": "Favorites",
+    "access": "PUBLIC",
+    "updated": "2019-03-30T17:21:24.684Z",
+    "created": "2019-03-30T17:21:24.684Z",
+    "volumeCount": 4,
+    "volumesLastUpdated": "2019-03-30T17:21:24.683Z"
+  },
+  "3": {
+    "kind": "books#bookshelf",
+    "id": "3",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/3",
+    "title": "Reading now",
+    "access": "PUBLIC",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "2": {
+    "kind": "books#bookshelf",
+    "id": "2",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/2",
+    "title": "To read",
+    "access": "PUBLIC",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "4": {
+    "kind": "books#bookshelf",
+    "id": "4",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/4",
+    "title": "Have read",
+    "access": "PUBLIC",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "8": {
+    "kind": "books#bookshelf",
+    "id": "8",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/8",
+    "title": "Books for you",
+    "access": "PRIVATE",
+    "updated": "2019-03-31T18:22:29.000Z",
+    "created": "2019-03-31T18:22:29.000Z",
+    "volumesLastUpdated": "2019-03-31T18:22:29.000Z"
+  },
+  "1001": {
+    "kind": "books#bookshelf",
+    "id": "1001",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/1001",
+    "title": "Fantasy",
+    "description": "Collection of fantasy books",
+    "access": "PUBLIC",
+    "updated": "2019-03-25T03:49:01.033Z",
+    "created": "2019-03-25T03:49:01.033Z",
+    "volumeCount": 0,
+    "volumesLastUpdated": "2019-03-25T03:49:01.032Z"
+  },
+  "1002": {
+    "kind": "books#bookshelf",
+    "id": "1002",
+    "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/1002",
+    "title": "Testing",
+    "description": "Testing",
+    "access": "PUBLIC",
+    "updated": "2019-03-25T03:48:49.080Z",
+    "created": "2019-03-25T03:48:49.080Z",
+    "volumeCount": 1,
+    "volumesLastUpdated": "2019-03-25T03:48:49.079Z"
+  }
+}

@@ -1,0 +1,757 @@
+{
+  "hFfhrCWiLSMC": {
+    "kind": "books#volume",
+    "id": "hFfhrCWiLSMC",
+    "etag": "iSGyJahfKfI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/hFfhrCWiLSMC",
+    "volumeInfo": {
+      "title": "The Hobbit, Or, There and Back Again",
+      "authors": ["John Ronald Reuel Tolkien"],
+      "publisher": "Ballantine Books",
+      "publishedDate": "1982",
+      "description": "<b>THE GREATEST FANTASY EPIC OF OUR TIME<br><br></b>Bilbo Baggins was a hobbit who wanted to be left alone in quiet comfort. But the wizard Gandalf came along with a band of homeless dwarves. Soon Bilbo was drawn into their quest, facing evil orcs, savage wolves, giant spiders, and worse unknown dangers. Finally, it was Bilbo–alone and unaided–who had to confront the great dragon Smaug, the terror of an entire countryside . . .<br><br><b>This stirring adventure fantasy begins the tale of the hobbits that was continued by J.R.R. Tolkien in his bestselling epic <i>The Lord of the Rings</i>.<br></b>",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0345339681"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780345339683"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 306,
+      "printedPageCount": 320,
+      "dimensions": {
+        "height": "18.00 cm",
+        "width": "10.80 cm",
+        "thickness": "1.90 cm"
+      },
+      "printType": "BOOK",
+      "categories": [
+        "FICTION / Classics",
+        "Fiction / Fantasy / Epic",
+        "Fiction / Literary",
+        "FICTION / Media Tie-In"
+      ],
+      "averageRating": 4,
+      "ratingsCount": 3115,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.1.1.0.preview.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE702tP6wpSTjRcbOZDA-6RpTB-PM4m0_22uo5W3IrkoQSwGciJlWqcCEB6Pp7QaIb_VFl21ouM5aYnMxgAbnevBC8xHAvuovFASED3T7OZMSos8zN3s&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73uYkvqpjHtACn7rWiBFD1CWsbrg803pj9W2pax_ZMnarjF0FYGdQz3Q2wtRu3yyifX1EC_2SYfJrdpbUTi-TfZVO2q_ZfKOuUz6eWhDL-eD5WFcEc&source=gbs_api",
+        "small": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71ekiXcd7cdkFK6YhLcQCzcYqU2gf3vJjcIJ6jVePOdUt2wIu624Ogn6xL4TWIKpkQcz90jJvRCdooxORsbg5hkMmPXJQZzZxQTBfn9hlav4Yd-wHs&source=gbs_api",
+        "medium": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72iH-csX380WHdzku7HQVLoMfHLmcAzcxP6LH18EtLTDvvX1MMGR9tqO9_bevWLgDDoBTo8LPbOLBEU2lad_ctWFS2CsNrn9Pg8xZeN5AZFn4teo1A&source=gbs_api",
+        "large": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71VM8JZgFo23OaShYkUkhpMA3gUQ_UHDmZfMqvniFvFK_YcUjgih6P7KfmkNcLB5Jv5oob5qg7XND5gRXBa7CqcDEVyfJHj20Lqw3UduwajlQX01Nk&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=hFfhrCWiLSMC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=hFfhrCWiLSMC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-hFfhrCWiLSMC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=hFfhrCWiLSMC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "VhSDQoBxJVIC": {
+    "kind": "books#volume",
+    "id": "VhSDQoBxJVIC",
+    "etag": "FHJ2Qu40GhI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/VhSDQoBxJVIC",
+    "volumeInfo": {
+      "title": "The Children of Húrin",
+      "authors": ["John Ronald Reuel Tolkien"],
+      "publisher": "Del Rey/Ballantine Books",
+      "publishedDate": "2010",
+      "description": "Long before the One Ring was forged in the fires of Mount Doom, one man--Húrin--dared to defy Morgoth, the first and greatest of the dark lords to plague Middle-earth. Thus did he and his children, Túrin and Niënor, earn the enmity of a merciless foe that would shape the destiny of all the ages to come.<br> <br> Only J.R.R. Tolkien, the undisputed master of the fantastic, could have conceived this magical tale of Elves and Men united against a brutal foe. And only Christopher Tolkien, the master's son and literary heir, could have fit the pieces of his father's unfinished work together with such deep understanding and consummate artistry. With an introduction and appendiCes by Christopher Tolkien, who has also contributed maps and genealogy tables, and eight stunning paintings and twenty-five pencil drawings by Oscar-winning artist Alan Lee, <b>The Children of Húrin</b> at last takes its proper place as the very cornerstone of J.R.R. Tolkien's immortal achievement.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0345518845"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780345518842"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 313,
+      "printedPageCount": 309,
+      "dimensions": {
+        "height": "18.00 cm",
+        "width": "10.70 cm",
+        "thickness": "2.30 cm"
+      },
+      "printType": "BOOK",
+      "categories": ["Fiction / Fantasy / Epic"],
+      "averageRating": 5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.1.0.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VhSDQoBxJVIC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70_e-zzMDEJssWnWmvUGNTk4wyGST4UTtJShTU69431nBQW0IQsRob2wZd2T7loiXqeBgqoSFx7ZPM1F9FJ-PJebXoFGq7Xh4keeDE7gz3w2vXQplc&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VhSDQoBxJVIC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE722LnH7EoJt-2DCWR_x8121RLlmfAbi0lpIL2fZt-n-sudOQUprUzf-pD6jNl2nxrKs-3GzubiKlBnc_8s99kxUw9e3Iyx4PJgxNeNRYHDsmFhl4Yk&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=VhSDQoBxJVIC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=VhSDQoBxJVIC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-VhSDQoBxJVIC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=VhSDQoBxJVIC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "7iUeAQAAIAAJ": {
+    "kind": "books#volume",
+    "id": "7iUeAQAAIAAJ",
+    "etag": "9sPG+EmB3P8",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/7iUeAQAAIAAJ",
+    "volumeInfo": {
+      "title": "The Lord of the Rings: The two towers",
+      "authors": ["John Ronald Reuel Tolkien"],
+      "publisher": "Houghton Mifflin",
+      "publishedDate": "1983",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0395082552"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780395082553"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 360,
+      "printedPageCount": 360,
+      "dimensions": {
+        "height": "23.00 cm"
+      },
+      "printType": "BOOK",
+      "mainCategory": "Fiction / Fantasy / Epic",
+      "categories": ["Fiction / Fantasy / General", "Fiction / Fantasy / Epic"],
+      "averageRating": 4.5,
+      "ratingsCount": 3406,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "1.1.1.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE73OWTIkJdO4zXrYG_yho8hbJs9100Mm4cZij5aGE_SPy96-LPWa-UOGBq_nII8i1NkxHFD8Z05Ymxo56fpXKLaEUx3n_g&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72Kkjla49X5pU_-MPbFipZtUUhpK3FRGgPaAQT48dzuFksmU8EHyrZZacjnFAipJ9ojsfpL90PfyBGUmkc09Sr_xaiN4w&source=gbs_api",
+        "small": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE70kPL3qeDhbbI65myIbxDpi-W9s6Vsx4Yy2OtBrMws-4Guv8BWmnRbOiw-loea3535VfndpYtq_SVOIIm7tPoW3JPPPTA&source=gbs_api",
+        "medium": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71W1W_c-SMCtuXJ_oTgR5B_k5kF7b8OTSgRcCs3pjf8wWyBA5tcrIhUV4uhsfIqgZMDLoE2KTN_y4UJzQi0aQ3p7si5Vw&source=gbs_api",
+        "large": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE72pUsqBAiUWen8O2s4_8H1X99ePe9gakBlgaxxAeAWKUrWIL0avpqQ-ysrsKiLXhH_FcizEMod7L6hvQyLxIqsVJgW7xQ&source=gbs_api",
+        "extraLarge": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE72MqfHC8xdusO4A6b8DYHSGNTyCzOAmsPzdnJgK1SdoZhVuoQR96hH1gdwzbSNkvXEExTNEWM0JjsM9oDjOIJufnKKR8g&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=7iUeAQAAIAAJ&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=7iUeAQAAIAAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-7iUeAQAAIAAJ"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=7iUeAQAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "JGyHdPoUGIgC": {
+    "kind": "books#volume",
+    "id": "JGyHdPoUGIgC",
+    "etag": "i76NOziUhrE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/JGyHdPoUGIgC",
+    "volumeInfo": {
+      "title": "The Lord of the Rings",
+      "subtitle": "The Art of The Return of the King",
+      "authors": ["Gary Russell"],
+      "publisher": "Houghton Mifflin",
+      "publishedDate": "2004",
+      "description": "With Peter Jackson's Acadamy Award-winning epic motion picture trilogy drawing to a spectacular and triumphant close, Gary Russell's detailed research takes us back into the world of Middle-earth, to relive all the visual drama and excitement of The Return of the King.<br> <br> The Art of The Return of the King illustrates the creative development of the film from sketch to special effect and features 600 images, most appearing nowhere else. This fully authorized book includes pencil sketches by Alan Lee and John Howe, costume designes by Ngila Dickson, magnificent full-color paintings by Jeremy Bennett, and prop designs, concepts, sculptures and digital artwork from Weta Workshop and Weta Digital. From Minas Tirith to Mount Doom, from the Army of the Dead to Shelob the monstrous spider, all the spectacular landscapes, characters and creatures are covered in stunning detail, including concepts that did not make it into the final film.<br> <br> To accompany this wealth of imagery, detailed and informative commentaries appear by all the featured artists and designers, together with a special afterword by Peter Jackson. Their personal thoughts and explanations offer unique and fascinating insight into how The Return of the King was brought to life. An artistic journey begun in 1997 reaches its glorious conclusion within these pages, giving the reader a unique chance to witness the creative process that led to one of the most spectacular movies of all time.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0618430296"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780618430291"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 224,
+      "printedPageCount": 234,
+      "dimensions": {
+        "height": "29.00 cm",
+        "width": "22.90 cm",
+        "thickness": "1.90 cm"
+      },
+      "printType": "BOOK",
+      "categories": ["Art / Popular Culture"],
+      "averageRating": 5,
+      "ratingsCount": 3,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=JGyHdPoUGIgC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE70hn_GpDlRwdjDm3laGnnNiFvnLOxuzR0l9EUIcen3CnFvEPzazQFWZp_uFKZVzH-YdDf-4DLvedn1BlqrP3WR6VI0udtM0BpCi_C3zT2qNBRBInyU&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=JGyHdPoUGIgC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72hq2OdBs5xdD1ARF5Y-MMJUT1qGZglaejBl7_Lx9qR8gURdFDJOLHA9d06YBCr8LLnFFZumxlQfogZl-lEALPhLjFgcaP02rc23zEM6kXsj8Dguik&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=JGyHdPoUGIgC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=JGyHdPoUGIgC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-JGyHdPoUGIgC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=JGyHdPoUGIgC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "-n1bAAAAMAAJ": {
+    "kind": "books#volume",
+    "id": "-n1bAAAAMAAJ",
+    "etag": "LYz9OIPCzfE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/-n1bAAAAMAAJ",
+    "volumeInfo": {
+      "title": "Sauron defeated",
+      "subtitle": "the end of the third age : the history of The lord of the rings, part four ; The Notion club papers ; and, The drowning of Anadûnê",
+      "authors": ["John Ronald Reuel Tolkien"],
+      "publisher": "HarperCollins",
+      "publishedDate": "1992-05-01",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0261102400"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780261102408"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 482,
+      "printedPageCount": 506,
+      "dimensions": {
+        "height": "23.00 cm",
+        "width": "16.00 cm"
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Fantasy fiction, English",
+        "Middle Earth (Imaginary place)",
+        "Fiction / Literary"
+      ],
+      "averageRating": 4,
+      "ratingsCount": 2,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE7336MlhzIQaEzfFd-y1hPlDMzR0ym_TmAQfzHlxaj8x35qIPZay1naykikeUbLgFN28rUYIL5EHJG6lcQbXys7enGEmXg&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70g-ugCnv73kGe4fJ9c0yeJXa6UCQ3donNtKE8sZXaU8znbTtdXfIfTKUJmqU4y1i4AW3_PJRWO3jV2pQW0ixC-QGcePQ&source=gbs_api",
+        "small": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=2&imgtk=AFLRE73Jg_7N4cXIOqnZzJ_zVA6lX9_tiZKkhOoSVr98_SOo-Taj_M3WOFUbcX-mwufiA9NrD28zos-G2xm7qIH6ehcasd4CYA&source=gbs_api",
+        "medium": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=3&imgtk=AFLRE71WgTIBZRlk4dXaz3nJ3_GVXpwe2gYdpf2D1pvVam7oVTolDfU-iHkfc2KPCWHiQKgvZQFBzzT0RY9SBbkqdQ0EFtKB-g&source=gbs_api",
+        "large": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=4&imgtk=AFLRE72Ihi_UkJz2thkmpwg0D0acuogEGAK-yf4p_76S3I_HvpJqtpwHeicFjm661U8P33REl6mIu0pNw7OA8Dn-e1q_gYx0sg&source=gbs_api",
+        "extraLarge": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=6&imgtk=AFLRE72_uTdalf9YY7e6xenpFCrSGn6nIo2JBDaY7nAQCQTdkLtlK22ZZxlfb1RtmGH4QWOX0l8S9B1a64jNJ4lDVkfLpLiTFA&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=-n1bAAAAMAAJ&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=-n1bAAAAMAAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book--n1bAAAAMAAJ"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=-n1bAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "kbWRZM7vo-oC": {
+    "kind": "books#volume",
+    "id": "kbWRZM7vo-oC",
+    "etag": "Fr4J/7LKNm0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/kbWRZM7vo-oC",
+    "volumeInfo": {
+      "title": "The War of the Ring",
+      "authors": ["Christopher Tolkien", "John Ronald Reuel Tolkien"],
+      "publisher": "Houghton Mifflin",
+      "publishedDate": "2000",
+      "description": "In The War of the Ring Christopher Tolkien takes up the story of the writing of The Lord of the Rings with the Battle of Helm's Deep and the drowning of Isengard by the Ents. This is followed by an account of how Frodo, Sam and Gollum were finally brought to the Pass of Kirith Ungol, at which point J.R.R. Tolkien wrote at the time: 'I have got the hero into such a fix that not even an author will be able to extricate him without labour and difficulty'. Then comes the war in Gondor, and the book ends with the parley between Gandalf and the ambassador of the Dark Lord before the Black Gate of Mordor. In describing his intentions for The Return of the King J.R.R. Tolkien said that 'It will probably work out very differently from this plan when it really gets written, as the thing seems to write itself once it gets going'; and in The War of the Ring totally unforeseen developmenst that would become central to the narrative are seen at the moment of their emergence: the palantir bursting into fragments on the stairs of Orthanc, its nature as unknown to the author as to those who saw it fall, or the entry of Faramir into the story ('I am sure I did not invent him, though I like him, but there he came walking into the woods of Ithilien').<br> <br> The book is illustrated with plans and drawings of the changing conceptions of Orthanc, Dunharrow, Minas Tirith and the tunnels of Shelob's Lair.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0618083596"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780618083596"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 476,
+      "printedPageCount": 492,
+      "dimensions": {
+        "height": "21.00 cm",
+        "width": "14.10 cm",
+        "thickness": "3.00 cm"
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Fiction / Fantasy / Epic",
+        "Literary Criticism / European / English, Irish, Scottish, Welsh",
+        "Literary Criticism / Science Fiction & Fantasy"
+      ],
+      "averageRating": 4.5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "1.1.0.0.preview.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=kbWRZM7vo-oC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE71TsIn4ELyfIiev39R7V_BGxkV10U6-HVtKZ1uIfxEzETMr8_hD-MrUil8qb4aYLAJY6UUoSdW-QBaBTkiGwMCn70vZQNDA-qBeyXf3x_inw7jIONw&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=kbWRZM7vo-oC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70E7haOrfP52507Yk8FVxHIGv6QfU_fTSIe5GwW74Hoip--TdRsF3Lr78jPlMfP3po2B8rLwdvB02QBB0AnPzhnCG7uBOGEKzJunvFunDXda52DSCA&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=kbWRZM7vo-oC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=kbWRZM7vo-oC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-kbWRZM7vo-oC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=kbWRZM7vo-oC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "CzXSh4NhOy4C": {
+    "kind": "books#volume",
+    "id": "CzXSh4NhOy4C",
+    "etag": "zjPu/JNSQnE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/CzXSh4NhOy4C",
+    "volumeInfo": {
+      "title": "The Return of the Shadow",
+      "subtitle": "The History of The Lord of the Rings, Part One",
+      "authors": ["John Ronald Reuel Tolkien", "Christopher Tolkien"],
+      "publisher": "Houghton Mifflin",
+      "publishedDate": "2000",
+      "description": "In this sixth volume of The History of Middle-earth the story reaches The Lord of the Rings. In The Return of the Shadow (an abandoned title for the first volume) Christopher Tolkien describes, with full citation of the earliest notes, outline plans, and narrative drafts, the intricate evolution of The Fellowship of the Ring and the gradual emergence of the conceptions that transformed what J.R.R. Tolkien for long believed would be a far shorter book, 'a sequel to The Hobbit'. The enlargement of Bilbo's 'magic ring' into the supremely potent and dangerous Ruling Ring of the Dark Lord is traced and the precise moment is seen when, in an astonishing and unforeseen leap in the earliest narrative, a Black Rider first rode into the Shire, his significance still unknown. The character of the hobbit called Trotter (afterwards Strider or Aragorn) is developed while his indentity remains an absolute puzzle, and the suspicion only very slowly becomes certainty that he must after all be a Man. The hobbits, Frodo's companions, undergo intricate permutations of name and personality, and other major figures appear in strange modes: a sinister Treebeard, in league with the Enemy, a ferocious and malevolent Farmer Maggot.<br> <br> The story in this book ends at the point where J.R.R. Tolkien halted in the story for a long time, as the Company of the Ring, still lacking Legolas and Gimli, stood before the tomb of Balin in the Mines of Moria. The Return of the Shadow is illustrated with reproductions of the first maps and notable pages from the earliest manuscripts.<br>",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "061808357X"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780618083572"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 497,
+      "printedPageCount": 516,
+      "dimensions": {
+        "height": "23.00 cm",
+        "width": "14.20 cm",
+        "thickness": "3.20 cm"
+      },
+      "printType": "BOOK",
+      "categories": ["Fiction / Fantasy / Epic"],
+      "averageRating": 4.5,
+      "ratingsCount": 8,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "3.1.0.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=CzXSh4NhOy4C&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE705cutJZLpHLmQf96ysEhhwFhpGklk3zkBabON178gK56NeGnauKj_h0rJ8eM6pnLppAuAXMjcTllW2bB-2AU89PTTZz3iaYX7eUuhOuXAejajj3_E&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=CzXSh4NhOy4C&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72z9jdKGq2FiCvX_TNxNrwxn8G_Xs3z1Doqc5kNvgzYnJf2VA4nPkqSiKYqT0VxGLzOA_kc9XKxbU-MaAfdfrtMkAbhyQgrgzvPnDkbi1GZaSG_X3g&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=CzXSh4NhOy4C&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=CzXSh4NhOy4C&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-CzXSh4NhOy4C"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=CzXSh4NhOy4C&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "EX6p1a8P9ywC": {
+    "kind": "books#volume",
+    "id": "EX6p1a8P9ywC",
+    "etag": "Vv7aErjJ7zQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/EX6p1a8P9ywC",
+    "volumeInfo": {
+      "title": "The Treason of Isengard",
+      "subtitle": "The History of the Lord of the Rings, Part Two",
+      "authors": ["John Ronald Reuel Tolkien", "Christopher Tolkien"],
+      "publisher": "Houghton Mifflin Company",
+      "publishedDate": "2000",
+      "description": "The Treason of Isengard is the seventh volume in Christopher Tolkien's History of Middle-earth and the second in his account of the evolution of The Lord of the Rings. In this book, following the long halt in the darkness of the Mines of Moria with which The Return of the Shadow ended, is traced the great expansion of the tale into new lands and new peoples south and east of the Misty Mountains; the emergence of Lothlorien, of Ents, of the Riders of Rohan, and of Saruman the White in the fortress of Isengard.<br> In brief outlines and pencilled drafts dashed down on scraps of paper are seen the first entry of Galadriel, the earliest ideas of the history of Gondor, the original meeting of Aragorn and Eowyn, its significance destined to be wholly transformed. Conceptions of what lay ahead are seen dissolving as the story took its own paths, as in the account of the capture of Frodo and his rescue by Sam Gmgee from Minas Morgul, written long before J.R.R. Tolkien actually came to that point in the writing of The Lord of the Rings. A chief feature of the book is a full account of the original Map, with re-drawings of successive phases, which was long the basis and accompaniment of the emerging geography of Middle-earth. An appendix to the book describes the Runic alphabets as they were at that time, with illustrations of the forms and an analysis of the Runes used in the Book of Mazarbul found beside Balin's Tomb in Moria.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0618083588"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780618083589"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 504,
+      "printedPageCount": 516,
+      "dimensions": {
+        "height": "21.00 cm",
+        "width": "14.00 cm",
+        "thickness": "3.20 cm"
+      },
+      "printType": "BOOK",
+      "categories": ["Fiction / Fantasy / Epic"],
+      "averageRating": 4.5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "2.2.2.0.preview.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=EX6p1a8P9ywC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE72HKDF39h6lNz7XYAWzXwWtk5x9sbXXJOVDm4OfJh7P4SJms0j-QgRFws-i9Sa0ycfj9u9eYsxOe44rCDbe6GuFKmjcTLyzf-rbHvhGA8Rp_l7ar_4&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=EX6p1a8P9ywC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72KihwsYddtCKVUhSMXbK2cbMaGi5Kch_fGJqwL4xcqQYN_8QZiy4j83o_oJd2kMShguVxenFc2CMX6Gbi2t26lpdtbl4YmFBFg_pR-wmJ-mmFn1f0&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=EX6p1a8P9ywC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=EX6p1a8P9ywC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-EX6p1a8P9ywC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=EX6p1a8P9ywC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "GNGJvGi849UC": {
+    "kind": "books#volume",
+    "id": "GNGJvGi849UC",
+    "etag": "ah2U+0nHFjQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/GNGJvGi849UC",
+    "volumeInfo": {
+      "title": "The Complete Guide to Middle-earth",
+      "subtitle": "From the Hobbit Through the Lord of the Rings and Beyond",
+      "authors": ["Robert Foster"],
+      "publisher": "Ballantine Books",
+      "publishedDate": "2001",
+      "description": "<b>For the millions who have already ventured to Middle-earth, and for the countless others who have yet to embark on the journey-here is the one indispensable A-to-Z guide that brings Tolkien's universe to life.<i><br></i></b><br> <b>EVERY CHARACTER<br></b> From <i>Adaldrida Brandybuck</i> to <i>Zaragamba</i>-every Hobbit, Elf, Dwarf, Man, Orc, or other resident of Middle-earth is vividly described and accurately located in proper place and time.<br> <br> <b>EVERY PLACE<br></b> Colorfully detailed descriptions of geographical entries allow you to pick up the action anywhere in Middle-earth and follow it through all five volumes.<br> <br> <b>EVERY THING<br></b> From stars and streams to food and flora, everything found in Middle-earth is alphabetically listed and, when necessary, cross-referenced.<br> <br> <b>Here is truly a master key to Tolkein</b>'s Middle-earth<br>",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0345449762"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780345449764"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 568,
+      "printedPageCount": 588,
+      "dimensions": {
+        "height": "21.00 cm",
+        "width": "13.90 cm",
+        "thickness": "3.20 cm"
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Fiction / Fantasy / Epic",
+        "Literary Criticism / European / English, Irish, Scottish, Welsh",
+        "Literary Criticism / Science Fiction & Fantasy"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 5,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.3.0.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73OQxbDSX-qeh9hHzGjutS7863-xCYrji60g5YUxB6lTiTCCscnHgi_aaikeTcbfYTRhgZml220hMLpcCpiGnXfQBxgizPlKpcaRN3Ewo1GV87LOTw&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71grS7FJShY34Dg7OG1AnAHQIgTQgr5_UGtAiws9vJzMnpHgFsF1KxvDb-w4Ka5fOD-ZqGAOFw0Y2HUEhgyg-m5xPDOT320GONYQq7FlCCbZknZrPg&source=gbs_api",
+        "small": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72ZHzG4fxDINdqLqiaKSh1Mg51vlrDjfWfjvzVx_gI85aTeyKE-35i9ynyzOhW5yrF0R8R2EYKw_gY8w2nqzCaAPxDa38M7tkXWiw6LuwWAunrDbD8&source=gbs_api",
+        "medium": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE713kPqp_8fg_d1NucCQSslms58QI_9uuOLQigwRfcOskO3ppvsF7WT5N1Tbxpnm5ko53c4XteACyWARJeyQdbblTm_ikf6gSjEuPcKlG9WJF11XfgE&source=gbs_api",
+        "large": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70rFBN1N6dvPkMFuTmbZSeGqlvv3HZYyWHkxB-ZOSE8hgqGGxRUQw8qVEfuCx-ovhcEuEnQZp6ZZQV_SL-EfIXpgVM0na6btgT2mpajcceGr1_tcns&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=GNGJvGi849UC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=GNGJvGi849UC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-GNGJvGi849UC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=GNGJvGi849UC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  },
+  "uW_9lW89bcYC": {
+    "kind": "books#volume",
+    "id": "uW_9lW89bcYC",
+    "etag": "AaGlxAgAAxI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/uW_9lW89bcYC",
+    "volumeInfo": {
+      "title": "The Book of Lost Tales",
+      "authors": ["John Ronald Reuel Tolkien"],
+      "publisher": "Ballantine Books",
+      "publishedDate": "1992",
+      "description": "<b>The extraordinary history of Middle-earth, edited by Christopher Tolkien</b><br> <br> <i>The Book of Lost Tales</i> stands at the beginning of the entire conception of Middle-earth and Valinor. Embedded in English legend and English association, they were set in the narrative frame of a great westward voyage over the Ocean by a mariner named Eriol (or Ælfwine) to Tol Eressëa, the Lonely Isle, where Elves dwelt; from them he learned their true history, the Lost Tales of Elfinesse. In the Tales are found the earliest accounts and original ideas of Gods and Elves; Dwarves and Orcs; the Silmarils and the Two Trees of Valinor; Nargothrond and Gondolin; and the geography and cosmology of the invented world.<br> <br> <b>Praise for <i>Book of Lost Tales 1</i></b><br> <br> \"In these tales we have the scholar joyously gamboling in the thickets of his imagination. . . . A commentary and notes greatly enrich the quest.\"<b>--<i>The Daily Telegraph</i></b><br> <br> \"Affords us an almost over-the-shoulder view into the evolving creative process and genius of J.R.R. Tolkien in a new, exciting aspect . . .The superb, sensitive, and extremely helpful commentary and editing done by Christopher Tolkien make all of this possible.\"<b>--Mythlore</b>",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0345375211"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780345375216"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 345,
+      "printedPageCount": 369,
+      "dimensions": {
+        "height": "18.00 cm",
+        "width": "10.70 cm",
+        "thickness": "2.70 cm"
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Fiction / Fantasy / General",
+        "Fiction / Fantasy / Epic",
+        "Fiction / Literary"
+      ],
+      "averageRating": 4.5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.1.0.0.preview.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71Vjp9D_ZP65kNtITCU21T_KMZD3Gh8K6R39xdhU-ald4IFXznBmPq-mNKX15AFRb8ErtRrqiiOHOeKoHJqi5IG96eyB0GbvJq1hu5-HoqI60GKt7I&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71H7gen5J3aPPcNc4JyENfgZcnaGm7TInU5A4toHfT-LTMqeYrYgh5W7DeRHIk21HA4Jh-SToeCEoL-u2YsDJKjIMrgQfbY9DHRBGYT4jbj9-TMYFM&source=gbs_api",
+        "small": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71zTldA4xXvUiC4V3wrWs5dhWUbY3_njv0htgtXgQFabnBIEv8jmPjwLpEI1ce9BsoD0UUETMSspIeyNCNYhOqYqQf6mTCJLeDON_ONjJpw6TzqSo0&source=gbs_api",
+        "medium": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE70NCOm1ffleg8QyIkHUJeUjE4Csm0pLcwyoLXqakFQe0xikjiVrUa8AAVKuHarmY76NT8Wc6inF5FVNB7T9dm4MC5Bv8FUb_FvLwcbZy1laEZXP63c&source=gbs_api",
+        "large": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE70iVrJSBILiQQUIkCLYpNDuYN_MfFNA7PcMWuxsh8AY6nRDHBjPZ1AOIj1hhic6Pa2bTUxW31fjosepZPPfsre51Z2_EN1XqGS64XybI3_sl8T9HBI&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com/books?id=uW_9lW89bcYC&hl=&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=uW_9lW89bcYC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-uW_9lW89bcYC"
+    },
+    "saleInfo": {
+      "country": "US",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "US",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=uW_9lW89bcYC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  }
+}

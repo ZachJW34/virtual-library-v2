@@ -1,17 +1,18 @@
-import { ConnectedRouterProps } from 'connected-react-router';
-import React from 'react';
-import GoogleLogin, { GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as userActions from '../../actions/user';
-import { Dispatch } from '../../constants/action-types';
-import { setAccessToken } from '../../utils/tokenHelper';
+import { ConnectedRouterProps } from "connected-react-router";
+import React from "react";
+import GoogleLogin, {
+  GoogleLoginResponse,
+  GoogleLoginResponseOffline
+} from "react-google-login";
+import * as userActions from "../../actions/user";
+import { useDispatch } from "../../types/redux-hooks";
+import { setAccessToken } from "../../utils/tokenHelper";
 
-type Props = {
-  fetchUserSuccess: typeof userActions.fetchUserSuccess
-} & ConnectedRouterProps;
+type Props = ConnectedRouterProps;
 
 const LoginComponent = (props: Props) => {
+  const dispatch = useDispatch();
+
   const scope =
     "email profile openid https://www.googleapis.com/auth/books https://www.googleapis.com/auth/drive";
 
@@ -22,12 +23,14 @@ const LoginComponent = (props: Props) => {
       setAccessToken(access_token, expires_at);
 
       const userProfile = auth.getBasicProfile();
-      props.fetchUserSuccess({
-        name: userProfile.getName(),
-        email: userProfile.getEmail(),
-        imageUrl: userProfile.getImageUrl(),
-        id: userProfile.getId()
-      });
+      dispatch(
+        userActions.fetchUserSuccess({
+          name: userProfile.getName(),
+          email: userProfile.getEmail(),
+          imageUrl: userProfile.getImageUrl(),
+          id: userProfile.getId()
+        })
+      );
       props.history.push("/home");
     }
   };
@@ -47,6 +50,4 @@ const LoginComponent = (props: Props) => {
   );
 };
 
-const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators(userActions, dispatch);
-
-export default connect(null, mapDispatchToProps)(LoginComponent);
+export default LoginComponent;

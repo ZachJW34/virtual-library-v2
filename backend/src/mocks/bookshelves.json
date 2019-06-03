@@ -1,0 +1,2164 @@
+{
+  "bookshelvesById": {
+    "0": {
+      "kind": "books#bookshelf",
+      "id": "0",
+      "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/0",
+      "title": "Favorites",
+      "access": "PUBLIC",
+      "updated": "2019-03-30T17:21:24.684Z",
+      "created": "2019-03-30T17:21:24.684Z",
+      "volumeCount": 4,
+      "volumesLastUpdated": "2019-03-30T17:21:24.683Z"
+    },
+    "7": {
+      "kind": "books#bookshelf",
+      "id": "7",
+      "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/7",
+      "title": "My Google eBooks",
+      "access": "PRIVATE",
+      "updated": "2019-04-13T18:40:33.000Z",
+      "created": "2019-04-13T18:40:33.000Z",
+      "volumeCount": 4,
+      "volumesLastUpdated": "2019-04-13T18:40:33.000Z"
+    },
+    "8": {
+      "kind": "books#bookshelf",
+      "id": "8",
+      "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/8",
+      "title": "Books for you",
+      "access": "PRIVATE",
+      "updated": "2019-04-13T18:40:33.000Z",
+      "created": "2019-04-13T18:40:33.000Z",
+      "volumesLastUpdated": "2019-04-13T18:40:33.000Z"
+    },
+    "1001": {
+      "kind": "books#bookshelf",
+      "id": "1001",
+      "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/1001",
+      "title": "Fantasy",
+      "description": "Collection of fantasy books",
+      "access": "PUBLIC",
+      "updated": "2019-04-11T02:40:00.760Z",
+      "created": "2019-04-11T02:40:00.760Z",
+      "volumeCount": 17,
+      "volumesLastUpdated": "2019-04-11T02:40:00.744Z"
+    },
+    "1002": {
+      "kind": "books#bookshelf",
+      "id": "1002",
+      "selfLink": "https://www.googleapis.com/books/v1/users/104260764353391958779/bookshelves/1002",
+      "title": "Testing",
+      "description": "Testing",
+      "access": "PUBLIC",
+      "updated": "2019-03-25T03:48:49.080Z",
+      "created": "2019-03-25T03:48:49.080Z",
+      "volumeCount": 1,
+      "volumesLastUpdated": "2019-03-25T03:48:49.079Z"
+    }
+  },
+  "volumesById": {
+    "9yF0AwAAQBAJ": {
+      "kind": "books#volume",
+      "id": "9yF0AwAAQBAJ",
+      "etag": "rZ2fgVtTISo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/9yF0AwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Slow Regard of Silent Things",
+        "authors": ["Patrick Rothfuss"],
+        "publisher": "Penguin",
+        "publishedDate": "2014-10-28",
+        "description": "Deep below the University, there is a dark place. Few people know of it: a broken web of ancient passageways and abandoned rooms. A young woman lives there, tucked among the sprawling tunnels of the Underthing, snug in the heart of this forgotten ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780698184947" },
+          { "type": "ISBN_10", "identifier": "0698184947" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 176,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 56,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.7.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=9yF0AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=9yF0AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=9yF0AwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=9yF0AwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-9yF0AwAAQBAJ",
+        "palette": {
+          "Vibrant": { "rgb": [12, 134, 188], "population": 32 },
+          "DarkVibrant": { "rgb": [8, 92, 135], "population": 59 },
+          "LightVibrant": {
+            "rgb": [130.356, 211.24199999999996, 247.044],
+            "population": 0
+          },
+          "Muted": { "rgb": [104, 120, 130], "population": 18 },
+          "DarkMuted": { "rgb": [56, 83, 100], "population": 48 },
+          "LightMuted": { "rgb": [202, 203, 216], "population": 10 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "9" }]
+      },
+      "userInfo": {
+        "readingPosition": {
+          "kind": "books#readingPosition",
+          "volumeId": "",
+          "gbTextPosition": "GBS.PT10.w.1.0.72",
+          "gbImagePosition": "GBS.PT10",
+          "epubCfiPosition": "#epubcfi(/6/16!/4[x9780698184947_EPUB]/4/50/2[GBS.0013.05])",
+          "pdfPosition": "#pdfloc(0,10)",
+          "updated": "2014-12-16T07:45:52.000Z"
+        },
+        "isInMyBooks": true,
+        "updated": "2014-12-16T07:45:52.000Z",
+        "entitlementType": 1
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 8.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 8.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=9yF0AwAAQBAJ&rdid=book-9yF0AwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 8990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 8990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Slow_Regard_of_Silent_Things-sample-epub.acsm?id=9yF0AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=9yF0AwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "Y7sOAAAAIAAJ": {
+      "kind": "books#volume",
+      "id": "Y7sOAAAAIAAJ",
+      "etag": "0v6JMv4pcQo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Y7sOAAAAIAAJ",
+      "volumeInfo": {
+        "title": "Alice's Adventures in Wonderland",
+        "authors": ["Lewis Carroll"],
+        "publishedDate": "1920",
+        "description": "In the most renowned novel by English author Lewis Carroll, restless young Alice literally stumbles into adventure when she follows the hurried, time-obsessed White Rabbit down a hole and into a fantastical realm where animals are quite verbose ...",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "STANFORD:36105004896523" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 200,
+        "printType": "BOOK",
+        "categories": ["Children's stories"],
+        "averageRating": 4,
+        "ratingsCount": 1680,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.4.0.full.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Y7sOAAAAIAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Y7sOAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=Y7sOAAAAIAAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Y7sOAAAAIAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-Y7sOAAAAIAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [252, 196, 100], "population": 234 },
+          "DarkVibrant": { "rgb": [83, 42, 37], "population": 9 },
+          "LightVibrant": { "rgb": [250, 195, 116], "population": 50 },
+          "Muted": { "rgb": [163, 156, 107], "population": 31 },
+          "DarkMuted": { "rgb": [48, 69, 43], "population": 14 },
+          "LightMuted": { "rgb": [204, 172, 180], "population": 1 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "18" }]
+      },
+      "userInfo": {
+        "isInMyBooks": true,
+        "updated": "2012-12-22T21:27:46.539Z",
+        "entitlementType": 2
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=Y7sOAAAAIAAJ&rdid=book-Y7sOAAAAIAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Alice_s_Adventures_in_Wonderland.epub?id=Y7sOAAAAIAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Alice_s_Adventures_in_Wonderland.pdf?id=Y7sOAAAAIAAJ&hl=&output=pdf&sig=ACfU3U0LJuWczqOh8hN2H4-DDF1Ym-Vr7g&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Y7sOAAAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    "KW0YAAAAYAAJ": {
+      "kind": "books#volume",
+      "id": "KW0YAAAAYAAJ",
+      "etag": "8UH9PcZTTaY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/KW0YAAAAYAAJ",
+      "volumeInfo": {
+        "title": "The Three Musketeers",
+        "authors": ["Alexandre Dumas"],
+        "publishedDate": "1878",
+        "description": "One of the preeminent novels by French writer Alexandre Dumas, this swashbuckling tale follows a group of honorable 17th-century swordsmen who must contend with powerful adversaries scheming against the queen. Determined to join the royal guard ...",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "HARVARD:HN2IDW" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 492,
+        "printType": "BOOK",
+        "averageRating": 4,
+        "ratingsCount": 601,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.9.0.full.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=KW0YAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=KW0YAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=KW0YAAAAYAAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=KW0YAAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-KW0YAAAAYAAJ",
+        "palette": {
+          "Vibrant": {
+            "rgb": [71.12244897959187, 121.4285714285714, 183.87755102040813],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [41, 70, 106], "population": 27 },
+          "LightVibrant": { "rgb": [220, 196, 156], "population": 88 },
+          "Muted": { "rgb": [108, 132, 158], "population": 3 },
+          "DarkMuted": { "rgb": [116, 64, 63], "population": 5 },
+          "LightMuted": { "rgb": [212, 198, 166], "population": 3 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "23" }]
+      },
+      "userInfo": {
+        "isInMyBooks": true,
+        "updated": "2012-12-22T21:27:46.316Z",
+        "entitlementType": 2
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=KW0YAAAAYAAJ&rdid=book-KW0YAAAAYAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/The_Three_Musketeers.epub?id=KW0YAAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/The_Three_Musketeers.pdf?id=KW0YAAAAYAAJ&hl=&output=pdf&sig=ACfU3U19zfGzWyO6HLnD7KIyPcwoQLcg-Q&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=KW0YAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    "3dwNAAAAQAAJ": {
+      "kind": "books#volume",
+      "id": "3dwNAAAAQAAJ",
+      "etag": "GcFLiIj19oo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3dwNAAAAQAAJ",
+      "volumeInfo": {
+        "title": "Treasure Island",
+        "authors": ["Robert Louis Stevenson"],
+        "publishedDate": "1883",
+        "description": "Treasure Island, published in 1883, popularized the now familiar characters of pirates and brought them to rum-swilling life. When an old sailor named Billy Bones dies in the inn belonging to young Jim Hawkins’s parents, he leaves a greasy old ...",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "OXFORD:504229172" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 292,
+        "printType": "BOOK",
+        "categories": ["Adventure stories"],
+        "averageRating": 4,
+        "ratingsCount": 894,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.12.0.full.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3dwNAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3dwNAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=3dwNAAAAQAAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=3dwNAAAAQAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-3dwNAAAAQAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [211, 72, 40], "population": 33 },
+          "DarkVibrant": { "rgb": [116, 20, 12], "population": 155 },
+          "LightVibrant": { "rgb": [214, 165, 77], "population": 6 },
+          "Muted": { "rgb": [159, 124, 118], "population": 38 },
+          "DarkMuted": {
+            "rgb": [138.65625, 23.906250000000007, 14.343750000000005],
+            "population": 0
+          },
+          "LightMuted": { "rgb": [204, 168, 168], "population": 16 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "28" }]
+      },
+      "userInfo": {
+        "readingPosition": {
+          "kind": "books#readingPosition",
+          "volumeId": "",
+          "gbTextPosition": "GBS.PR7.w.2.1.0",
+          "gbImagePosition": "GBS.PR7",
+          "epubCfiPosition": "#epubcfi(/6/6!/4/2/2[GBS.PR7.w.2.1.0])",
+          "pdfPosition": "#pdfloc(0,12)",
+          "updated": "2016-03-05T02:03:09.000Z"
+        },
+        "isInMyBooks": true,
+        "updated": "2016-03-05T02:03:09.000Z",
+        "entitlementType": 2
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=3dwNAAAAQAAJ&rdid=book-3dwNAAAAQAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Treasure_Island.epub?id=3dwNAAAAQAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Treasure_Island.pdf?id=3dwNAAAAQAAJ&hl=&output=pdf&sig=ACfU3U0rdrZ_7ZMJ_8xk6aZphUjq1AP1FQ&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3dwNAAAAQAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    "uSi6u0kgnBgC": {
+      "kind": "books#volume",
+      "id": "uSi6u0kgnBgC",
+      "etag": "h0hEmySovyU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uSi6u0kgnBgC",
+      "volumeInfo": {
+        "title": "The Bonehunters",
+        "subtitle": "Book Six of The Malazan Book of the Fallen",
+        "authors": ["Steven Erikson"],
+        "publisher": "Tor Books",
+        "publishedDate": "2007-09-18",
+        "description": "The Seven Cities Rebellion has been crushed. Sha'ik is dead. One last rebel force remains, holed up in the city of Y'Ghatan and under the fanatical command of Leoman of the Flails. The prospect of laying siege to this ancient fortress makes the ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "142992697X" },
+          { "type": "ISBN_13", "identifier": "9781429926973" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 800,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 19,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.12.8.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uSi6u0kgnBgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uSi6u0kgnBgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=uSi6u0kgnBgC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=uSi6u0kgnBgC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-uSi6u0kgnBgC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [81.13636363636365, 90.40909090909088, 173.86363636363635],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [35, 39, 75], "population": 66 },
+          "LightVibrant": {
+            "rgb": [164.5909090909091, 169.41272727272727, 212.80909090909088],
+            "population": 0
+          },
+          "Muted": { "rgb": [111, 117, 165], "population": 37 },
+          "DarkMuted": { "rgb": [64, 68, 112], "population": 68 },
+          "LightMuted": { "rgb": [167, 167, 195], "population": 27 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "24" }]
+      },
+      "userInfo": { "updated": "2019-04-02T03:30:56.174Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=uSi6u0kgnBgC&rdid=book-uSi6u0kgnBgC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=uSi6u0kgnBgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "CHv0OJIJBfEC": {
+      "kind": "books#volume",
+      "id": "CHv0OJIJBfEC",
+      "etag": "kDg3odpexxI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CHv0OJIJBfEC",
+      "volumeInfo": {
+        "title": "Memories of Ice",
+        "subtitle": "Book Three of The Malazan Book of the Fallen",
+        "authors": ["Steven Erikson"],
+        "publisher": "Tor Books",
+        "publishedDate": "2006-08-01",
+        "description": "The ravaged continent of Genabackis has given birth to a terrifying new empire: the Pannion Domin. Like a tide of corrupted blood, it seethes across the land, devouring all. In its path stands an uneasy alliance: Onearm's army and Whiskeyjack's ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "1429926635" },
+          { "type": "ISBN_13", "identifier": "9781429926638" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 784,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 33,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.30.25.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CHv0OJIJBfEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CHv0OJIJBfEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=CHv0OJIJBfEC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=CHv0OJIJBfEC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-CHv0OJIJBfEC",
+        "palette": {
+          "Vibrant": { "rgb": [229, 78, 44], "population": 12 },
+          "DarkVibrant": { "rgb": [92, 76, 28], "population": 1 },
+          "LightVibrant": { "rgb": [245, 233, 127], "population": 8 },
+          "Muted": { "rgb": [190, 116, 110], "population": 3 },
+          "DarkMuted": { "rgb": [77, 54, 37], "population": 116 },
+          "LightMuted": { "rgb": [177, 177, 198], "population": 3 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "33" }]
+      },
+      "userInfo": { "updated": "2019-04-02T03:30:47.053Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=CHv0OJIJBfEC&rdid=book-CHv0OJIJBfEC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=CHv0OJIJBfEC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "CedzAgAAQBAJ": {
+      "kind": "books#volume",
+      "id": "CedzAgAAQBAJ",
+      "etag": "aVjHQEe6GnQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CedzAgAAQBAJ",
+      "volumeInfo": {
+        "title": "The Complete Malazan Book of the Fallen",
+        "authors": ["Steven Erikson"],
+        "publisher": "Tor Books",
+        "publishedDate": "2014-01-28",
+        "description": "Included in The Malazan Empire collection are Steven Erikson's books: Gardens of the Moon Deadhouse Gates Memories of Ice House of Chains Midnight Tides The Bonehunters Reaper's Gale Toll the Hounds Dust of Dreams The Crippled God At the ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780765376855" },
+          { "type": "ISBN_10", "identifier": "0765376857" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 7392,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.17.15.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CedzAgAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CedzAgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=CedzAgAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=CedzAgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-CedzAgAAQBAJ",
+        "palette": {
+          "Vibrant": { "rgb": [229, 157, 68], "population": 10 },
+          "DarkVibrant": { "rgb": [100, 42, 20], "population": 9 },
+          "LightVibrant": { "rgb": [247, 225, 126], "population": 36 },
+          "Muted": { "rgb": [151, 132, 105], "population": 9 },
+          "DarkMuted": { "rgb": [78, 54, 35], "population": 76 },
+          "LightMuted": { "rgb": [164, 156, 140], "population": 1 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "20" }]
+      },
+      "userInfo": { "updated": "2019-03-30T17:21:22.284Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 79.92, "currencyCode": "USD" },
+        "retailPrice": { "amount": 79.92, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=CedzAgAAQBAJ&rdid=book-CedzAgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 79920000, "currencyCode": "USD" },
+            "retailPrice": {
+              "amountInMicros": 79920000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=CedzAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "t_ZYYXZq4RgC": {
+      "kind": "books#volume",
+      "id": "t_ZYYXZq4RgC",
+      "etag": "sMw/Qr5t628",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/t_ZYYXZq4RgC",
+      "volumeInfo": {
+        "title": "Mistborn",
+        "subtitle": "The Final Empire",
+        "authors": ["Brandon Sanderson"],
+        "publisher": "Macmillan",
+        "publishedDate": "2010-04-01",
+        "description": "From #1 New York Times bestselling author Brandon Sanderson, the Mistborn series is a heist story of political intrigue and magical, martial-arts action. For a thousand years the ash fell and no flowers bloomed. For a thousand years the Skaa ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "1429914564" },
+          { "type": "ISBN_13", "identifier": "9781429914567" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 2257,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "9.28.25.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=t_ZYYXZq4RgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=t_ZYYXZq4RgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=t_ZYYXZq4RgC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=t_ZYYXZq4RgC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-t_ZYYXZq4RgC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [185.45454545454547, 115.9090909090909, 69.54545454545455],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [32, 20, 12], "population": 4 },
+          "LightVibrant": {
+            "rgb": [218.83636363636364, 182.67272727272726, 158.56363636363636],
+            "population": 0
+          },
+          "Muted": { "rgb": [110, 125, 126], "population": 56 },
+          "DarkMuted": { "rgb": [76, 44, 44], "population": 1 },
+          "LightMuted": { "rgb": [195, 197, 198], "population": 60 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "34" }]
+      },
+      "userInfo": { "updated": "2019-03-25T03:48:46.133Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 8.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 8.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=t_ZYYXZq4RgC&rdid=book-t_ZYYXZq4RgC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 8990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 8990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=t_ZYYXZq4RgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "hFfhrCWiLSMC": {
+      "kind": "books#volume",
+      "id": "hFfhrCWiLSMC",
+      "etag": "78PPDy8oIqw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/hFfhrCWiLSMC",
+      "volumeInfo": {
+        "title": "The Hobbit, Or, There and Back Again",
+        "authors": ["John Ronald Reuel Tolkien"],
+        "publishedDate": "1982",
+        "description": "Chronicles the adventures of the inhabitants of Middle-earth and Bilbo Baggins, the hobbit who brought home to The Shire the One Ring of Power",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780345339683" },
+          { "type": "ISBN_10", "identifier": "0345339681" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 306,
+        "printType": "BOOK",
+        "categories": ["FICTION"],
+        "averageRating": 4,
+        "ratingsCount": 2650,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=hFfhrCWiLSMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=hFfhrCWiLSMC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=hFfhrCWiLSMC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Hobbit_Or_There_and_Back_Again.html?hl=&id=hFfhrCWiLSMC",
+        "palette": {
+          "Vibrant": { "rgb": [152, 153, 60], "population": 11 },
+          "DarkVibrant": { "rgb": [76, 83, 24], "population": 67 },
+          "LightVibrant": {
+            "rgb": [217.02535211267607, 217.64788732394368, 159.7521126760563],
+            "population": 0
+          },
+          "Muted": { "rgb": [161, 150, 80], "population": 66 },
+          "DarkMuted": { "rgb": [90, 81, 54], "population": 67 },
+          "LightMuted": { "rgb": [196, 180, 156], "population": 1 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=hFfhrCWiLSMC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "VhSDQoBxJVIC": {
+      "kind": "books#volume",
+      "id": "VhSDQoBxJVIC",
+      "etag": "ZnXv/O1xlYA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/VhSDQoBxJVIC",
+      "volumeInfo": {
+        "title": "The Children of Húrin",
+        "authors": [
+          "John Ronald Reuel Tolkien",
+          "Christopher Tolkien",
+          "Alan Lee"
+        ],
+        "publisher": "Random House Digital, Inc.",
+        "publishedDate": "2010",
+        "description": "A fantasy adventure saga set in the early days of Middle-Earth features humans and elves, dwarves and dragons, orcs and dark sorcerers clashing in an epic battle between good and evil.",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780345518842" },
+          { "type": "ISBN_10", "identifier": "0345518845" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 313,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 77,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=VhSDQoBxJVIC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=VhSDQoBxJVIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=VhSDQoBxJVIC&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=VhSDQoBxJVIC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Children_of_H%C3%BArin.html?hl=&id=VhSDQoBxJVIC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [76.49999999999999, 133.16666666666666, 178.50000000000003],
+            "population": 0
+          },
+          "DarkVibrant": {
+            "rgb": [39.779999999999994, 69.24666666666667, 92.82000000000001],
+            "population": 0
+          },
+          "LightVibrant": { "rgb": [192, 212, 228], "population": 2 },
+          "Muted": { "rgb": [150, 133, 93], "population": 65 },
+          "DarkMuted": { "rgb": [80, 72, 51], "population": 22 },
+          "LightMuted": { "rgb": [172, 196, 212], "population": 1 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=VhSDQoBxJVIC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "7iUeAQAAIAAJ": {
+      "kind": "books#volume",
+      "id": "7iUeAQAAIAAJ",
+      "etag": "brjnoDxTLnw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7iUeAQAAIAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings: The two towers",
+        "authors": ["John Ronald Reuel Tolkien"],
+        "publishedDate": "1983",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "STANFORD:36105028847775" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 3406,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7iUeAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=7iUeAQAAIAAJ&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7iUeAQAAIAAJ&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings_The_two_towers.html?hl=&id=7iUeAQAAIAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [127.5, 127.5, 127.5], "population": 0 },
+          "DarkVibrant": { "rgb": [66.3, 66.3, 66.3], "population": 0 },
+          "LightVibrant": { "rgb": [188.7, 188.7, 188.7], "population": 0 },
+          "Muted": { "rgb": [76.5, 76.5, 76.5], "population": 0 },
+          "DarkMuted": { "rgb": [76.5, 76.5, 76.5], "population": 0 },
+          "LightMuted": { "rgb": [195, 195, 195], "population": 12 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=7iUeAQAAIAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "JGyHdPoUGIgC": {
+      "kind": "books#volume",
+      "id": "JGyHdPoUGIgC",
+      "etag": "yswlhuW8Oes",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/JGyHdPoUGIgC",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "subtitle": "The Art of The Return of the King",
+        "authors": ["Gary Russell"],
+        "publisher": "University of Hawaii Press",
+        "publishedDate": "2004-01",
+        "description": "Showcases the development of the imagery from the third Tolkien-inspired movie, from concept drawings to full-color paintings and digital artwork, and includes commentaries by the featured artists and designers.",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "0618430296" },
+          { "type": "ISBN_13", "identifier": "9780618430291" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "categories": ["Art"],
+        "averageRating": 5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=JGyHdPoUGIgC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=JGyHdPoUGIgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=JGyHdPoUGIgC&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=JGyHdPoUGIgC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=JGyHdPoUGIgC",
+        "palette": {
+          "Vibrant": { "rgb": [176, 83, 69], "population": 29 },
+          "DarkVibrant": { "rgb": [92, 60, 20], "population": 1 },
+          "LightVibrant": {
+            "rgb": [217.65551020408165, 167.32163265306122, 159.74448979591835],
+            "population": 0
+          },
+          "Muted": { "rgb": [133, 112, 121], "population": 6 },
+          "DarkMuted": { "rgb": [82, 64, 42], "population": 18 },
+          "LightMuted": {
+            "rgb": [109.91020408163268, 51.83265306122449, 43.08979591836731],
+            "population": 0
+          }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=JGyHdPoUGIgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "-n1bAAAAMAAJ": {
+      "kind": "books#volume",
+      "id": "-n1bAAAAMAAJ",
+      "etag": "Re/sA8JYZAM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-n1bAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Sauron defeated",
+        "subtitle": "the end of the third age : the history of The lord of the rings, part four ; The Notion club papers ; and, The drowning of Anadûnê",
+        "authors": ["John Ronald Reuel Tolkien"],
+        "publisher": "Not Avail",
+        "publishedDate": "1992-05-01",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "UOM:39015028417452" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 482,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-n1bAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=-n1bAAAAMAAJ&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=-n1bAAAAMAAJ&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Sauron_defeated.html?hl=&id=-n1bAAAAMAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [127.5, 127.5, 127.5], "population": 0 },
+          "DarkVibrant": { "rgb": [66.3, 66.3, 66.3], "population": 0 },
+          "LightVibrant": { "rgb": [188.7, 188.7, 188.7], "population": 0 },
+          "Muted": { "rgb": [76.5, 76.5, 76.5], "population": 0 },
+          "DarkMuted": { "rgb": [76.5, 76.5, 76.5], "population": 0 },
+          "LightMuted": { "rgb": [192, 192, 192], "population": 10 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=-n1bAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "kbWRZM7vo-oC": {
+      "kind": "books#volume",
+      "id": "kbWRZM7vo-oC",
+      "etag": "uWuSNdnKeso",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kbWRZM7vo-oC",
+      "volumeInfo": {
+        "title": "The War of the Ring",
+        "authors": ["Christopher Tolkien", "John Ronald Reuel Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2000",
+        "description": "Exploring the creation of \"The Lord of the Rings\" trilogy, this volume follows the War of the Ring to its finale before the Black Gate of Mordor",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "0618083596" },
+          { "type": "ISBN_13", "identifier": "9780618083596" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 476,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kbWRZM7vo-oC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kbWRZM7vo-oC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=kbWRZM7vo-oC&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=kbWRZM7vo-oC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_War_of_the_Ring.html?hl=&id=kbWRZM7vo-oC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [172.8813559322034, 90.76271186440674, 82.1186440677966],
+            "population": 0
+          },
+          "DarkVibrant": {
+            "rgb": [89.89830508474577, 47.19661016949151, 42.70169491525423],
+            "population": 0
+          },
+          "LightVibrant": { "rgb": [236, 217, 215], "population": 32 },
+          "Muted": { "rgb": [108, 113, 134], "population": 46 },
+          "DarkMuted": { "rgb": [64, 68, 68], "population": 55 },
+          "LightMuted": { "rgb": [213, 197, 204], "population": 61 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=kbWRZM7vo-oC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "CzXSh4NhOy4C": {
+      "kind": "books#volume",
+      "id": "CzXSh4NhOy4C",
+      "etag": "wVrmZOSHkDM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CzXSh4NhOy4C",
+      "volumeInfo": {
+        "title": "The Return of the Shadow",
+        "subtitle": "The History of The Lord of the Rings, Part One",
+        "authors": ["John Ronald Reuel Tolkien", "Christopher Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2000",
+        "description": "In this sixth volume of The History of Middle-earth the story reaches The Lord of the Rings. In The Return of the Shadow (an abandoned title for the first volume) Christopher Tolkien describes, with full citation of the earliest notes, outline ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "061808357X" },
+          { "type": "ISBN_13", "identifier": "9780618083572" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 497,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 8,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.1.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CzXSh4NhOy4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CzXSh4NhOy4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=CzXSh4NhOy4C&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=CzXSh4NhOy4C&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Return_of_the_Shadow.html?hl=&id=CzXSh4NhOy4C",
+        "palette": {
+          "Vibrant": {
+            "rgb": [144.50000000000003, 116.875, 110.49999999999997],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [75.14, 60.775, 57.46], "population": 0 },
+          "LightVibrant": {
+            "rgb": [197.54000000000002, 183.17499999999998, 179.85999999999999],
+            "population": 0
+          },
+          "Muted": { "rgb": [144, 122, 114], "population": 72 },
+          "DarkMuted": { "rgb": [68, 55, 52], "population": 73 },
+          "LightMuted": {
+            "rgb": [86.7, 70.12499999999999, 66.29999999999998],
+            "population": 0
+          }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=CzXSh4NhOy4C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "EX6p1a8P9ywC": {
+      "kind": "books#volume",
+      "id": "EX6p1a8P9ywC",
+      "etag": "UXBVAkdY7PE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/EX6p1a8P9ywC",
+      "volumeInfo": {
+        "title": "The Treason of Isengard",
+        "subtitle": "The History of the Lord of the Rings, Part Two",
+        "authors": ["John Ronald Reuel Tolkien", "Christopher Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2000",
+        "description": "Recounts the writing of the central section of the Lord of the Rings, and shows how Tolkien developed his maps of Middle Earth",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "0618083588" },
+          { "type": "ISBN_13", "identifier": "9780618083589" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 504,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=EX6p1a8P9ywC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=EX6p1a8P9ywC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=EX6p1a8P9ywC&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=EX6p1a8P9ywC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Treason_of_Isengard.html?hl=&id=EX6p1a8P9ywC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [103.21428571428572, 119.40476190476191, 151.78571428571428],
+            "population": 0
+          },
+          "DarkVibrant": {
+            "rgb": [53.67142857142857, 62.090476190476195, 78.92857142857143],
+            "population": 0
+          },
+          "LightVibrant": {
+            "rgb": [176.07142857142856, 184.4904761904762, 201.32857142857142],
+            "population": 0
+          },
+          "Muted": { "rgb": [119, 122, 134], "population": 58 },
+          "DarkMuted": { "rgb": [64, 68, 67], "population": 74 },
+          "LightMuted": { "rgb": [180, 188, 204], "population": 3 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=EX6p1a8P9ywC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "GNGJvGi849UC": {
+      "kind": "books#volume",
+      "id": "GNGJvGi849UC",
+      "etag": "N3r94AxMC8w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GNGJvGi849UC",
+      "volumeInfo": {
+        "title": "The Complete Guide to Middle-earth",
+        "subtitle": "From the Hobbit Through the Lord of the Rings and Beyond",
+        "authors": ["Robert Foster"],
+        "publisher": "Del Rey Books",
+        "publishedDate": "2001",
+        "description": "Lists every character, event, and place in all of Tolkien's books set in Middle-Earth, incorporating detailed references to \"The Silmarillion,\" which the author considered his most important work.",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780345449764" },
+          { "type": "ISBN_10", "identifier": "0345449762" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 568,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.0.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GNGJvGi849UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=GNGJvGi849UC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GNGJvGi849UC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Complete_Guide_to_Middle_earth.html?hl=&id=GNGJvGi849UC",
+        "palette": {
+          "Vibrant": { "rgb": [200, 144, 90], "population": 4 },
+          "DarkVibrant": { "rgb": [148, 76, 68], "population": 1 },
+          "LightVibrant": { "rgb": [159, 197, 228], "population": 47 },
+          "Muted": { "rgb": [162, 117, 88], "population": 48 },
+          "DarkMuted": { "rgb": [40, 54, 61], "population": 51 },
+          "LightMuted": { "rgb": [145, 164, 189], "population": 41 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=GNGJvGi849UC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "uW_9lW89bcYC": {
+      "kind": "books#volume",
+      "id": "uW_9lW89bcYC",
+      "etag": "dhd/PhPrxn4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uW_9lW89bcYC",
+      "volumeInfo": {
+        "title": "The Book of Lost Tales",
+        "authors": ["John Ronald Reuel Tolkien"],
+        "publisher": "History of Middle-Earth (Paper",
+        "publishedDate": "1992",
+        "description": "The first form of the myths and legends in Tolkien's conception of the Middle Kingdom features the adventures of Eriol, and the tales of Beren and Luthien, Turin and the dragon, the necklace of the dwarves, and the fall of Gondolin. Reissue.",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780345375216" },
+          { "type": "ISBN_10", "identifier": "0345375211" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 345,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uW_9lW89bcYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=uW_9lW89bcYC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=uW_9lW89bcYC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Book_of_Lost_Tales.html?hl=&id=uW_9lW89bcYC",
+        "palette": {
+          "Vibrant": { "rgb": [180, 148, 36], "population": 72 },
+          "DarkVibrant": { "rgb": [136, 108, 28], "population": 12 },
+          "LightVibrant": { "rgb": [221, 196, 121], "population": 6 },
+          "Muted": { "rgb": [176, 139, 82], "population": 10 },
+          "DarkMuted": { "rgb": [87, 76, 55], "population": 69 },
+          "LightMuted": { "rgb": [188, 178, 167], "population": 11 }
+        }
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=uW_9lW89bcYC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "XV8XAAAAYAAJ": {
+      "kind": "books#volume",
+      "id": "XV8XAAAAYAAJ",
+      "etag": "Bpy+09WBbdw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XV8XAAAAYAAJ",
+      "volumeInfo": {
+        "title": "Moby Dick",
+        "authors": ["Herman Melville"],
+        "publishedDate": "1892",
+        "description": "A literary classic that wasn't recognized for its merits until decades after its publication, Herman Melville's Moby-Dick tells the tale of a whaling ship and its crew, who are carried progressively further out to sea by the fiery Captain Ahab ...",
+        "industryIdentifiers": [
+          { "type": "OTHER", "identifier": "HARVARD:HN1E4C" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 664,
+        "printType": "BOOK",
+        "categories": ["Adventure stories"],
+        "averageRating": 4,
+        "ratingsCount": 302,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.8.0.full.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XV8XAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XV8XAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=XV8XAAAAYAAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=XV8XAAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-XV8XAAAAYAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [44, 156, 180], "population": 1 },
+          "DarkVibrant": { "rgb": [30, 140, 160], "population": 4 },
+          "LightVibrant": { "rgb": [162, 204, 212], "population": 6 },
+          "Muted": { "rgb": [100, 164, 172], "population": 1 },
+          "DarkMuted": { "rgb": [60, 52, 36], "population": 1 },
+          "LightMuted": { "rgb": [196, 212, 220], "population": 10 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "16" }]
+      },
+      "userInfo": { "updated": "2019-04-11T02:40:00.707Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=XV8XAAAAYAAJ&rdid=book-XV8XAAAAYAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Moby_Dick.epub?id=XV8XAAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Moby_Dick.pdf?id=XV8XAAAAYAAJ&hl=&output=pdf&sig=ACfU3U2j7tKT8bbSwXHCttT_eX6HUg70aA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XV8XAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    "SSDxnx-ozrUC": {
+      "kind": "books#volume",
+      "id": "SSDxnx-ozrUC",
+      "etag": "izMRHcCDVgg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/SSDxnx-ozrUC",
+      "volumeInfo": {
+        "title": "The Children of Húrin",
+        "authors": ["J.R.R. Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2012-02-15",
+        "description": "The Children of Húrin is the first complete book by J.R.R.Tolkien since the 1977 publication of The Silmarillion. Six thousand years before the One Ring is destroyed, Middle-earth lies under the shadow of the Dark Lord Morgoth. The greatest ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780547952109" },
+          { "type": "ISBN_10", "identifier": "0547952104" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 5,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.8.9.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=SSDxnx-ozrUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=SSDxnx-ozrUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=SSDxnx-ozrUC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=SSDxnx-ozrUC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-SSDxnx-ozrUC",
+        "palette": {
+          "Vibrant": { "rgb": [186, 123, 90], "population": 88 },
+          "DarkVibrant": { "rgb": [114, 87, 40], "population": 7 },
+          "LightVibrant": { "rgb": [244, 205, 164], "population": 92 },
+          "Muted": { "rgb": [156, 113, 90], "population": 57 },
+          "DarkMuted": { "rgb": [81, 70, 52], "population": 7 },
+          "LightMuted": { "rgb": [204, 164, 148], "population": 2 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "15" }]
+      },
+      "userInfo": { "updated": "2019-04-11T02:12:30.781Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=SSDxnx-ozrUC&rdid=book-SSDxnx-ozrUC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Children_of_H%C3%BArin-sample-epub.acsm?id=SSDxnx-ozrUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Children_of_H%C3%BArin-sample-pdf.acsm?id=SSDxnx-ozrUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=SSDxnx-ozrUC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "4OfWWfRDAXcC": {
+      "kind": "books#volume",
+      "id": "4OfWWfRDAXcC",
+      "etag": "xcwi54rClSQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4OfWWfRDAXcC",
+      "volumeInfo": {
+        "title": "The Silmarillion",
+        "authors": ["J.R.R. Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2012-02-15",
+        "description": "A number-one New York Times bestseller when it was originally published, THE SILMARILLION is the core of J.R.R. Tolkien's imaginative writing, a work whose origins stretch back to a time long before THE HOBBIT. Tolkien considered THE SILMARILLION ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780547951980" },
+          { "type": "ISBN_10", "identifier": "0547951981" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 368,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 30,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.15.14.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4OfWWfRDAXcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4OfWWfRDAXcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=4OfWWfRDAXcC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=4OfWWfRDAXcC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-4OfWWfRDAXcC",
+        "palette": {
+          "Vibrant": { "rgb": [6, 140, 204], "population": 9 },
+          "DarkVibrant": { "rgb": [8, 106, 151], "population": 5 },
+          "LightVibrant": {
+            "rgb": [126.18857142857144, 210.8, 251.21142857142857],
+            "population": 0
+          },
+          "Muted": { "rgb": [76, 132, 124], "population": 1 },
+          "DarkMuted": { "rgb": [74, 74, 75], "population": 31 },
+          "LightMuted": { "rgb": [213, 213, 224], "population": 8 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "24" }]
+      },
+      "userInfo": { "updated": "2019-04-11T02:07:45.554Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=4OfWWfRDAXcC&rdid=book-4OfWWfRDAXcC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Silmarillion-sample-epub.acsm?id=4OfWWfRDAXcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Silmarillion-sample-pdf.acsm?id=4OfWWfRDAXcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4OfWWfRDAXcC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "_V7auQAACAAJ": {
+      "kind": "books#volume",
+      "id": "_V7auQAACAAJ",
+      "etag": "lu73Y2AGfyI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_V7auQAACAAJ",
+      "volumeInfo": {
+        "title": "The Two Towers",
+        "authors": ["John Ronald Reuel Tolkien"],
+        "publisher": "HarperCollins",
+        "publishedDate": "2012",
+        "description": "Frodo and the Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in the battle ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "0007488335" },
+          { "type": "ISBN_13", "identifier": "9780007488339" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 352,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 1296,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_V7auQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_V7auQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=_V7auQAACAAJ&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_V7auQAACAAJ&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Two_Towers.html?hl=&id=_V7auQAACAAJ",
+        "palette": {
+          "Vibrant": { "rgb": [150, 124, 46], "population": 3 },
+          "DarkVibrant": { "rgb": [109, 89, 42], "population": 15 },
+          "LightVibrant": { "rgb": [243, 244, 208], "population": 31 },
+          "Muted": { "rgb": [122, 122, 130], "population": 84 },
+          "DarkMuted": { "rgb": [86, 74, 55], "population": 26 },
+          "LightMuted": { "rgb": [190, 191, 179], "population": 73 }
+        }
+      },
+      "userInfo": { "updated": "2019-04-11T02:03:51.047Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=_V7auQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "6SniBAAAQBAJ": {
+      "kind": "books#volume",
+      "id": "6SniBAAAQBAJ",
+      "etag": "fiuFUx/mUCc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/6SniBAAAQBAJ",
+      "volumeInfo": {
+        "title": "The Ice Dragon",
+        "authors": ["George R. R. Martin"],
+        "publisher": "Tor Teen",
+        "publishedDate": "2014-10-21",
+        "description": "The Ice Dragon is an enchanting tale of courage and sacrifice for young readers and adults by the wildly popular author of the #1 New York Times bestselling Song of Ice and Fire series, George R.R. Martin. Lavish illustrations by acclaimed artist ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9781466885783" },
+          { "type": "ISBN_10", "identifier": "1466885785" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 128,
+        "printType": "BOOK",
+        "categories": ["Young Adult Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 25,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=6SniBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=6SniBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=6SniBAAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=6SniBAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-6SniBAAAQBAJ",
+        "palette": {
+          "Vibrant": {
+            "rgb": [67.99999999999999, 187.00000000000003, 181.33333333333334],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [12, 33, 32], "population": 8 },
+          "LightVibrant": { "rgb": [161, 197, 213], "population": 33 },
+          "Muted": { "rgb": [92, 148, 166], "population": 3 },
+          "DarkMuted": { "rgb": [44, 76, 84], "population": 1 },
+          "LightMuted": { "rgb": [153, 190, 201], "population": 31 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "7" }]
+      },
+      "userInfo": { "updated": "2019-04-10T02:20:51.320Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=6SniBAAAQBAJ&rdid=book-6SniBAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": true },
+        "webReaderLink": "http://play.google.com/books/reader?id=6SniBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "bPJUDwAAQBAJ": {
+      "kind": "books#volume",
+      "id": "bPJUDwAAQBAJ",
+      "etag": "vR/YEAzh/UE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bPJUDwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Fall of Gondolin",
+        "authors": ["J.R.R. Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2018-08-30",
+        "description": "#1 NEW YORK TIMES BESTSELLER In the Tale of The Fall of Gondolin are two of the greatest powers in the world. There is Morgoth of the uttermost evil, unseen in this story but ruling over a vast military power from his fortress of Angband. Deeply ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9781328612991" },
+          { "type": "ISBN_10", "identifier": "1328612996" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bPJUDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bPJUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=bPJUDwAAQBAJ&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=bPJUDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-bPJUDwAAQBAJ",
+        "palette": {
+          "Vibrant": {
+            "rgb": [144.6268656716418, 125.5970149253731, 110.37313432835819],
+            "population": 0
+          },
+          "DarkVibrant": {
+            "rgb": [75.20597014925374, 65.31044776119401, 57.39402985074626],
+            "population": 0
+          },
+          "LightVibrant": {
+            "rgb": [197.60597014925375, 187.710447761194, 179.79402985074626],
+            "population": 0
+          },
+          "Muted": { "rgb": [140, 128, 121], "population": 45 },
+          "DarkMuted": { "rgb": [48, 51, 55], "population": 59 },
+          "LightMuted": { "rgb": [197, 187, 179], "population": 47 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "3" }]
+      },
+      "userInfo": { "updated": "2019-04-03T15:18:55.009Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 14.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 14.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=bPJUDwAAQBAJ&rdid=book-bPJUDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 14990000, "currencyCode": "USD" },
+            "retailPrice": {
+              "amountInMicros": 14990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Fall_of_Gondolin-sample-epub.acsm?id=bPJUDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Fall_of_Gondolin-sample-pdf.acsm?id=bPJUDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bPJUDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "aWZzLPhY4o0C": {
+      "kind": "books#volume",
+      "id": "aWZzLPhY4o0C",
+      "etag": "5wxWb6QYotI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aWZzLPhY4o0C",
+      "volumeInfo": {
+        "title": "The Fellowship of the Ring",
+        "subtitle": "Being the First Part of The Lord of the Rings",
+        "authors": ["J.R.R. Tolkien"],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2012-02-15",
+        "description": "The first volume in J.R.R. Tolkien's epic adventure THE LORD OF THE RINGS One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them In ancient times the Rings of Power were crafted by the Elven ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9780547952017" },
+          { "type": "ISBN_10", "identifier": "0547952015" }
+        ],
+        "readingModes": { "text": true, "image": true },
+        "pageCount": 432,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4.5,
+        "ratingsCount": 81,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "3.22.21.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aWZzLPhY4o0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aWZzLPhY4o0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=aWZzLPhY4o0C&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=aWZzLPhY4o0C&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-aWZzLPhY4o0C",
+        "palette": {
+          "Vibrant": { "rgb": [212, 180, 10], "population": 6 },
+          "DarkVibrant": { "rgb": [156, 132, 4], "population": 3 },
+          "LightVibrant": {
+            "rgb": [249.02702702702703, 229.91351351351352, 128.37297297297297],
+            "population": 0
+          },
+          "Muted": { "rgb": [116, 116, 116], "population": 1 },
+          "DarkMuted": { "rgb": [47, 42, 25], "population": 123 },
+          "LightMuted": { "rgb": [213, 213, 224], "population": 8 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "35" }]
+      },
+      "userInfo": { "updated": "2019-04-03T15:18:49.598Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=aWZzLPhY4o0C&rdid=book-aWZzLPhY4o0C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Fellowship_of_the_Ring-sample-epub.acsm?id=aWZzLPhY4o0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Fellowship_of_the_Ring-sample-pdf.acsm?id=aWZzLPhY4o0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=aWZzLPhY4o0C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "DO0uiSCwZA0C": {
+      "kind": "books#volume",
+      "id": "DO0uiSCwZA0C",
+      "etag": "oxaGjzR/qiA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DO0uiSCwZA0C",
+      "volumeInfo": {
+        "title": "The Crippled God",
+        "subtitle": "Book Ten of The Malazan Book of the Fallen",
+        "authors": ["Steven Erikson"],
+        "publisher": "Tor Books",
+        "publishedDate": "2011-03-01",
+        "description": "Savaged by the K'Chain Nah'Ruk, the Bonehunters march for Kolanse, where waits an unknown fate. Tormented by questions, the army totters on the edge of mutiny, but Adjunct Tavore will not relent. One final act remains, if it is in her power, if ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9781429969475" },
+          { "type": "ISBN_10", "identifier": "1429969474" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 928,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 14,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.6.6.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DO0uiSCwZA0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DO0uiSCwZA0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=DO0uiSCwZA0C&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=DO0uiSCwZA0C&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-DO0uiSCwZA0C",
+        "palette": {
+          "Vibrant": { "rgb": [223, 110, 24], "population": 12 },
+          "DarkVibrant": { "rgb": [124, 49, 25], "population": 85 },
+          "LightVibrant": { "rgb": [228, 220, 156], "population": 2 },
+          "Muted": { "rgb": [168, 120, 92], "population": 2 },
+          "DarkMuted": { "rgb": [54, 67, 92], "population": 56 },
+          "LightMuted": { "rgb": [172, 172, 180], "population": 1 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "10" }]
+      },
+      "userInfo": { "updated": "2019-04-02T03:31:12.345Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "retailPrice": { "amount": 9.99, "currencyCode": "USD" },
+        "buyLink": "https://play.google.com/store/books/details?id=DO0uiSCwZA0C&rdid=book-DO0uiSCwZA0C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "retailPrice": { "amountInMicros": 9990000, "currencyCode": "USD" },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": true },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=DO0uiSCwZA0C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "mzvyxRsxiloC": {
+      "kind": "books#volume",
+      "id": "mzvyxRsxiloC",
+      "etag": "Kp53uPe0WDA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mzvyxRsxiloC",
+      "volumeInfo": {
+        "title": "Reaper's Gale",
+        "subtitle": "Book Seven of The Malazan Book of the Fallen",
+        "authors": ["Steven Erikson"],
+        "publisher": "Macmillan",
+        "publishedDate": "2008-03-04",
+        "description": "A clash of warriors draws closer as Rhulad Sengar, the Emperor of a Thousand Deaths, spirals into madness, surrounded by sycophants and agents of his Machiavellian chancellor. Against this backdrop, a band of fugitives seek a way out of the ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_10", "identifier": "0765310074" },
+          { "type": "ISBN_13", "identifier": "9780765310071" }
+        ],
+        "readingModes": { "text": false, "image": false },
+        "pageCount": 832,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 16,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mzvyxRsxiloC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mzvyxRsxiloC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=mzvyxRsxiloC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=mzvyxRsxiloC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Reaper_s_Gale.html?hl=&id=mzvyxRsxiloC",
+        "palette": {
+          "Vibrant": { "rgb": [172, 124, 46], "population": 3 },
+          "DarkVibrant": { "rgb": [116, 92, 36], "population": 1 },
+          "LightVibrant": { "rgb": [191, 170, 116], "population": 58 },
+          "Muted": { "rgb": [159, 138, 96], "population": 15 },
+          "DarkMuted": { "rgb": [92, 76, 49], "population": 3 },
+          "LightMuted": { "rgb": [156, 180, 185], "population": 7 }
+        }
+      },
+      "userInfo": { "updated": "2019-04-02T03:30:58.433Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": { "isAvailable": false },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=mzvyxRsxiloC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    "02F0VIwOACsC": {
+      "kind": "books#volume",
+      "id": "02F0VIwOACsC",
+      "etag": "QXe49Wr0+Yc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/02F0VIwOACsC",
+      "volumeInfo": {
+        "title": "Gardens Of The Moon",
+        "subtitle": "(Malazan Book Of The Fallen 1)",
+        "authors": ["Steven Erikson"],
+        "publisher": "Random House",
+        "publishedDate": "2009-07-28",
+        "description": "Bled dry by interminable warfare, infighting and bloody confrontations with Lord Anomander Rake and his Tiste Andii, the vast, sprawling Malazan empire simmers with discontent. Even its imperial legions yearn for some respite. For Sergeant ...",
+        "industryIdentifiers": [
+          { "type": "ISBN_13", "identifier": "9781409083108" },
+          { "type": "ISBN_10", "identifier": "1409083101" }
+        ],
+        "readingModes": { "text": true, "image": false },
+        "pageCount": 768,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 73,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.15.11.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=02F0VIwOACsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=02F0VIwOACsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "previewLink": "http://books.google.com/books?id=02F0VIwOACsC&printsec=frontcover&hl=&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=02F0VIwOACsC&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Gardens_Of_The_Moon.html?hl=&id=02F0VIwOACsC",
+        "palette": {
+          "Vibrant": {
+            "rgb": [96.72413793103453, 70.34482758620689, 184.6551724137931],
+            "population": 0
+          },
+          "DarkVibrant": { "rgb": [44, 32, 84], "population": 2 },
+          "LightVibrant": {
+            "rgb": [172.69655172413795, 158.97931034482758, 218.4206896551724],
+            "population": 0
+          },
+          "Muted": { "rgb": [127, 107, 155], "population": 25 },
+          "DarkMuted": { "rgb": [64, 49, 94], "population": 65 },
+          "LightMuted": { "rgb": [169, 153, 187], "population": 58 }
+        }
+      },
+      "layerInfo": {
+        "layers": [{ "layerId": "geo", "volumeAnnotationsVersion": "19" }]
+      },
+      "userInfo": { "updated": "2019-04-02T03:30:33.979Z" },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Gardens_Of_The_Moon-sample-epub.acsm?id=02F0VIwOACsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": { "isAvailable": false },
+        "webReaderLink": "http://play.google.com/books/reader?id=02F0VIwOACsC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    }
+  },
+  "volumesByBookshelfId": {
+    "0": ["uSi6u0kgnBgC", "CHv0OJIJBfEC", "CedzAgAAQBAJ", "t_ZYYXZq4RgC"],
+    "7": ["9yF0AwAAQBAJ", "Y7sOAAAAIAAJ", "KW0YAAAAYAAJ", "3dwNAAAAQAAJ"],
+    "8": [
+      "hFfhrCWiLSMC",
+      "VhSDQoBxJVIC",
+      "7iUeAQAAIAAJ",
+      "JGyHdPoUGIgC",
+      "-n1bAAAAMAAJ",
+      "kbWRZM7vo-oC",
+      "CzXSh4NhOy4C",
+      "EX6p1a8P9ywC",
+      "GNGJvGi849UC",
+      "uW_9lW89bcYC"
+    ],
+    "1001": [
+      "XV8XAAAAYAAJ",
+      "SSDxnx-ozrUC",
+      "4OfWWfRDAXcC",
+      "_V7auQAACAAJ",
+      "6SniBAAAQBAJ",
+      "bPJUDwAAQBAJ",
+      "aWZzLPhY4o0C",
+      "DO0uiSCwZA0C",
+      "mzvyxRsxiloC",
+      "uSi6u0kgnBgC"
+    ],
+    "1002": ["02F0VIwOACsC"]
+  }
+}

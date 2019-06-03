@@ -1,34 +1,59 @@
-import React, { useEffect, useState } from 'react';
-import { connect } from 'react-redux';
-import { RouteComponentProps } from 'react-router';
-import { bindActionCreators } from 'redux';
-import styles from './BookshelfVolumes.module.css';
-import * as bookshelvesActions from '../../actions/bookshelves';
-import VolumeHighlightComponent from '../../components/volume-highlight/VolumeHighlight';
-import { VolumeSearchFormComponent } from '../../components/volume-search-form/VolumeSearchForm';
-import VolumeTileComponent from '../../components/volume-tile/VolumeTile';
-import { Dispatch } from '../../constants/action-types';
-import { Bookshelf } from '../../models/google-bookshelves';
-import { Volume, VolumeSearchParams, VolumeSearchResponse } from '../../models/google-volumes';
-import { getBookshelfById, getVolumesByBookshelfId, State } from '../../reducers';
-import { addQueryParams } from '../../utils/fetchHelper';
-import { getVibrant } from '../../utils/swatchHelper';
+import React, { useCallback, useEffect, useState } from "react";
+import { RouteComponentProps } from "react-router";
+import styles from "./BookshelfVolumes.module.css";
+import * as bookshelvesActions from "../../actions/bookshelves";
+import VolumeHighlightComponent from "../../components/volume-highlight/VolumeHighlight";
+import { VolumeSearchFormComponent } from "../../components/volume-search-form/VolumeSearchForm";
+import VolumeTileComponent from "../../components/volume-tile/VolumeTile";
+import {
+  Volume,
+  VolumeSearchParams,
+  VolumeSearchResponse
+} from "../../models/google-volumes";
+import {
+  getBookshelfById,
+  getVolumesByBookshelfId,
+  State
+} from "../../reducers";
+import { useDispatch, useSelector } from "../../types/redux-hooks";
+import { addQueryParams } from "../../utils/fetchHelper";
 
 type Props = {
-  bookshelf: Bookshelf;
-  volumes: Volume[];
   accessToken: string;
-  fetchAddVolumeToBookshelf: typeof bookshelvesActions.fetchAddVolumeToBookshelf;
-  fetchDeleteVolumeFromBookshelf: typeof bookshelvesActions.fetchDeleteVolumeFromBookshelf;
 } & RouteComponentProps<{ [key: string]: string }>;
 
 const BookshelfVolumesComponent: React.FC<Props> = props => {
-  const [volumeSearch, setVolumeSearch] = useState({} as VolumeSearchResponse);
-  const [selectedVolume, setSelectedVolume] = useState(
-    !!props.volumes.length ? props.volumes[0] : undefined
+  const { bookshelf, volumes } = useSelector((state: State) => ({
+    bookshelf: getBookshelfById(state, props.match.params.bookshelfId),
+    volumes: getVolumesByBookshelfId(state, props.match.params.bookshelfId)
+  }));
+  const dispatch = useDispatch();
+
+  const addVolumeToBookshelf = useCallback(
+    volume =>
+      dispatch(
+        bookshelvesActions.fetchAddVolumeToBookshelf(bookshelf.id, volume)
+      ),
+    [dispatch]
   );
 
-  useEffect(() => setSelectedVolume(!!props.volumes.length ? props.volumes[0] : undefined), [props.volumes])
+  const deleteVolumeFromBookshelf = useCallback(
+    volume =>
+      dispatch(
+        bookshelvesActions.fetchDeleteVolumeFromBookshelf(bookshelf.id, volume)
+      ),
+    [dispatch]
+  );
+
+  const [volumeSearch, setVolumeSearch] = useState({} as VolumeSearchResponse);
+  const [selectedVolume, setSelectedVolume] = useState(
+    !!volumes.length ? volumes[0] : undefined
+  );
+
+  useEffect(
+    () => setSelectedVolume(!!volumes.length ? volumes[0] : undefined),
+    [props.match.params.bookshelfId]
+  );
 
   const searchVolumes = (params: VolumeSearchParams) => {
     fetch(`/volumes${addQueryParams(params)}`, {
@@ -38,16 +63,7 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
       .then(res => setVolumeSearch(res));
   };
 
-  const addVolumeToBookshelf = (volume: Volume) => {
-    props.fetchAddVolumeToBookshelf(props.bookshelf.id, volume);
-  };
-
-  const deleteVolumeFromBookshelf = (volume: Volume) => {
-    props.fetchDeleteVolumeFromBookshelf(props.bookshelf.id, volume);
-  };
-
   const selectVolume = (volume: Volume) => {
-    console.log(volume);
     setSelectedVolume(volume);
   };
 
@@ -59,7 +75,7 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
         </div>
       ) : null}
       <div className={styles["volumes-container"]}>
-        {props.volumes.map(volume => (
+        {volumes.map(volume => (
           <div key={volume.id} className={styles["volume-tile"]}>
             <VolumeTileComponent
               volume={volume}
@@ -87,19 +103,4 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   );
 };
 
-const mapStateToProps = (
-  state: State,
-  ownProps: RouteComponentProps<{ [key: string]: string }> & {}
-) => ({
-  bookshelf: getBookshelfById(state, ownProps.match.params.bookshelfId),
-  volumes: getVolumesByBookshelfId(state, ownProps.match.params.bookshelfId),
-  ...ownProps
-});
-
-const mapDispatchToProps = (dispatch: Dispatch) =>
-  bindActionCreators(bookshelvesActions, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BookshelfVolumesComponent);
+export default BookshelfVolumesComponent;

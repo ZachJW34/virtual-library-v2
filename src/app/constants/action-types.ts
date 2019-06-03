@@ -39,7 +39,7 @@ export type Action =
 export type GetState = () => State;
 export type PromiseAction = Promise<Action>;
 export type ThunkAction = (dispatch: Dispatch, getState: GetState) => any;
-export type Dispatch = (action: Action) => any;
+export type Dispatch = (action: Action | ThunkAction) => any;
 
 export enum LOADING_TYPES {
   FETCH_BOOKSHELVES = "FETCH_BOOKSHELVES",
