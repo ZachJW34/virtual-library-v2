@@ -1,22 +1,14 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { RouteComponentProps } from "react-router";
-import styles from "./BookshelfVolumes.module.css";
-import * as bookshelvesActions from "../../actions/bookshelves";
-import VolumeHighlightComponent from "../../components/volume-highlight/VolumeHighlight";
-import { VolumeSearchFormComponent } from "../../components/volume-search-form/VolumeSearchForm";
-import VolumeTileComponent from "../../components/volume-tile/VolumeTile";
-import {
-  Volume,
-  VolumeSearchParams,
-  VolumeSearchResponse
-} from "../../models/google-volumes";
-import {
-  getBookshelfById,
-  getVolumesByBookshelfId,
-  State
-} from "../../reducers";
-import { useDispatch, useSelector } from "../../types/redux-hooks";
-import { addQueryParams } from "../../utils/fetchHelper";
+import React, { useCallback, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { RouteComponentProps } from 'react-router';
+import styles from './BookshelfVolumes.module.css';
+import * as bookshelvesActions from '../../actions/bookshelves';
+import VolumeHighlightComponent from '../../components/volume-highlight/VolumeHighlight';
+import { VolumeSearchFormComponent } from '../../components/volume-search-form/VolumeSearchForm';
+import VolumeTileComponent from '../../components/volume-tile/VolumeTile';
+import { Volume, VolumeSearchParams, VolumeSearchResponse } from '../../models/google-volumes';
+import { getBookshelfById, getVolumesByBookshelfId, State } from '../../reducers';
+import { addQueryParams } from '../../utils/fetchHelper';
 
 type Props = {
   accessToken: string;

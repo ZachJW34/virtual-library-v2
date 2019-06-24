@@ -1,12 +1,9 @@
-import { ConnectedRouterProps } from "connected-react-router";
-import React from "react";
-import GoogleLogin, {
-  GoogleLoginResponse,
-  GoogleLoginResponseOffline
-} from "react-google-login";
-import * as userActions from "../../actions/user";
-import { useDispatch } from "../../types/redux-hooks";
-import { setAccessToken } from "../../utils/tokenHelper";
+import { ConnectedRouterProps } from 'connected-react-router';
+import React from 'react';
+import GoogleLogin, { GoogleLoginResponse, GoogleLoginResponseOffline } from 'react-google-login';
+import { useDispatch } from 'react-redux';
+import * as userActions from '../../actions/user';
+import { setAccessToken } from '../../utils/tokenHelper';
 
 type Props = ConnectedRouterProps;
 
@@ -14,7 +11,7 @@ const LoginComponent = (props: Props) => {
   const dispatch = useDispatch();
 
   const scope =
-    "email profile openid https://www.googleapis.com/auth/books https://www.googleapis.com/auth/drive";
+    "email profile openid https://www.googleapis.com/auth/books https://www.googleapis.com/auth/drive.file";
 
   const onSuccess = (res: GoogleLoginResponse | GoogleLoginResponseOffline) => {
     const auth = res as GoogleLoginResponse;

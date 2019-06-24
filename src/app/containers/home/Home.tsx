@@ -1,14 +1,15 @@
-import { CircularProgress } from "@material-ui/core";
-import { ConnectedRouterProps, push } from "connected-react-router";
-import React, { FunctionComponent, useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
-import styles from "./Home.module.css";
-import * as bookshelvesActions from "../../actions/bookshelves";
-import { LOADING_TYPES } from "../../constants/action-types";
-import { getBookshelves, getUpdateState } from "../../reducers";
-import { useDispatch, useSelector } from "../../types/redux-hooks";
-import { isAccessTokenValid } from "../../utils/tokenHelper";
-import BookshelvesComponent from "../bookshelves/Bookshelves";
+import { CircularProgress } from '@material-ui/core';
+import { ConnectedRouterProps, push } from 'connected-react-router';
+import React, { FunctionComponent, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+import styles from './Home.module.css';
+import * as bookshelvesActions from '../../actions/bookshelves';
+import { LOADING_TYPES } from '../../constants/action-types';
+import { getBookshelves, getUpdateState, State } from '../../reducers';
+import { isAccessTokenValid } from '../../utils/tokenHelper';
+import BookshelvesComponent from '../bookshelves/Bookshelves';
+import Test from '../test/Test';
 
 type Props = {
   push: typeof push;
@@ -16,7 +17,7 @@ type Props = {
 
 const HomeComponent: FunctionComponent<Props> = props => {
   const bookshelves = useSelector(getBookshelves);
-  const updateState = useSelector(state =>
+  const updateState = useSelector((state: State) =>
     getUpdateState(state, [LOADING_TYPES.FETCH_BOOKSHELVES])
   );
   const dispatch = useDispatch();
@@ -42,6 +43,7 @@ const HomeComponent: FunctionComponent<Props> = props => {
       ) : (
         <BookshelvesComponent startTab={startTab} bookshelves={bookshelves} />
       )}
+      <Test></Test>
     </div>
   );
 };

@@ -10,7 +10,7 @@
     "eject": "react-scripts eject",
     "node-build": "npm run build-ts",
     "node-watch": "concurrently -- \"npm:node-watch-*\"",
-    "watch-nodemon": "nodemon dist/backend/index.js",
+    "node-watch-nodemon": "nodemon dist/backend/index.js",
     "node-build-ts": "tsc --project backend/",
     "node-watch-ts": "npm run node-build-ts -- -w"
   },
@@ -26,7 +26,7 @@
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "@material-ui/icons": "^4.0.1",
-    "@types/react-redux": "^7.0.9",
+    "@types/react-redux": "^7.1.0",
     "connected-react-router": "^6.4.0",
     "fastify": "^1.14.1",
     "fs": "0.0.1-security",
@@ -35,8 +35,9 @@
     "node-vibrant": "^3.2.0-alpha",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.5",
     "react-google-login": "^5.0.2",
-    "react-redux": "^7.1.0-rc.1",
+    "react-redux": "^7.1.0",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.5",
@@ -48,17 +49,18 @@
   },
   "devDependencies": {
     "@types/history": "^4.7.2",
+    "@types/http-errors": "^1.6.1",
     "@types/jest": "24.0.4",
+    "@types/node": "^11.9.4",
     "@types/react": "16.8.8",
     "@types/react-dom": "^16.8.4",
+    "@types/react-dropzone": "^4.2.2",
     "@types/react-router-dom": "^4.3.3",
-    "@types/uuid": "^3.4.4",
-    "cross-env": "^5.2.0",
-    "typescript": "3.3.3",
-    "@types/http-errors": "^1.6.1",
-    "@types/node": "^11.9.4",
     "@types/request-promise": "^4.1.42",
+    "@types/uuid": "^3.4.4",
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.10"
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "typescript": "3.3.3"
   }
 }
