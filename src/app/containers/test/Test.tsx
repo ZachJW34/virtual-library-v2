@@ -1,137 +1,63 @@
-import React, { useCallback, useEffect } from 'react';
+import { LinearProgress } from '@material-ui/core';
+import { Howl } from 'howler';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { v4 } from 'uuid';
+import {
+  doResumableChunkedUpload,
+  doSimpleResumableUpload,
+  doSimpleUpload,
+  getUploadType,
+  ProgressCallback,
+  UploadTypes
+  } from '../../utils/driveHelper';
 import { getAuthHeader } from '../../utils/tokenHelper';
 
 const Test: React.FC<any> = props => {
-  const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: File[]) => {
-    for (const file of acceptedFiles) {
-      resumableUpload(file);
-    }
-  }, []);
+  const [completed, setCompleted] = useState(0);
+  const [bufferCompleted, setBufferCompleted] = useState(0);
+
+  const progressCallback: ProgressCallback = useCallback(
+    (percentComplete, bufferPercentComplete) => {
+      console.log({ percentComplete, bufferPercentComplete });
+      setCompleted(percentComplete);
+      setBufferCompleted(bufferPercentComplete);
+    },
+    []
+  );
+
+  const onDrop = useCallback(
+    async (acceptedFiles: File[], rejectedFiles: File[]) => {
+      for (const file of acceptedFiles) {
+        const uploadType = getUploadType(file.size);
+        let result;
+        switch (uploadType) {
+          case UploadTypes.SIMPLE:
+            result = await doSimpleUpload(file);
+          case UploadTypes.SIMPLE_RESUMABLE:
+            result = await doSimpleResumableUpload(file);
+          case UploadTypes.RESUMABLE_CHUNKED:
+            result = await doResumableChunkedUpload(file, progressCallback);
+          default:
+        }
+        console.log(result);
+      }
+    },
+    []
+  );
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
-  const resumableUpload = async (file: File) => {
-    try {
-      const fileContent = await readFile(file);
-      const body = JSON.stringify({
-        name: file.name,
-        mimeType: file.type
-      });
-      const response = await fetch(
-        "https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable",
-        {
-          method: "POST",
-          headers: {
-            ...getAuthHeader(),
-            "Content-Type": "application/json"
-          },
-          body
-        }
-      );
-      if (response.status === 200) {
-        const location = response.headers.get("location") as string;
-        // const chunks = chunkify(file, new Uint8Array(fileContent));
-        const complete = await sendChunks(
-          location,
-          file,
-          new Uint8Array(fileContent)
-        );
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
+  // useEffect(() => {
+  //   console.log("Hello world");
+  //   const sound = new Howl({
+  //     src: "https://drive.google.com/open?id=1WPeGALRq6r0ix-HMXR_4r8nGNzhqf22Z",
+  //     format: "mp3",
+  //     html5: true
+  //   });
+  //   sound.play();
+  //   console.log(sound);
+  //   sound.volume(1);
+  // }, []);
 
-  const readFile = (file: File): Promise<ArrayBuffer> => {
-    const reader = new FileReader();
-    return new Promise((resolve, reject) => {
-      reader.onabort = reader.onerror = e => reject(e);
-      reader.onload = event =>
-        reader.result ? resolve(reader.result as ArrayBuffer) : reject(event);
-      reader.readAsArrayBuffer(file);
-    });
-  };
-
-  const sendChunks = async (
-    location: string,
-    file: File,
-    buffer: Uint8Array
-  ) => {
-    try {
-      let flag = true;
-      let startByte = 0;
-      while (flag) {
-        const chunk = getChunk(startByte, buffer);
-        const response = await fetch(location, {
-          method: "PUT",
-          headers: {
-            "Content-Length": chunk.contentLength,
-            "Content-Range": chunk.contentRange,
-            "Content-Type": file.type
-          },
-          body: chunk.value
-        });
-        switch (response.status) {
-          case 200:
-            flag = false;
-            break;
-          case 308:
-            const range = response.headers.get("range") as string;
-            startByte = Number.parseInt(range.slice(6).split("-")[1]) + 1;
-            break;
-          default:
-            console.log(response.status);
-            throw new Error();
-        }
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  const getChunk = (startByte: number, buffer: Uint8Array) => {
-    const chunkSize = 256 * 4 * 5 * 1024;
-    const endByte =
-      startByte + chunkSize > buffer.length
-        ? buffer.length
-        : startByte + chunkSize;
-    const chunk = buffer.slice(startByte, endByte);
-    return {
-      value: chunk,
-      contentLength: chunk.length.toString(),
-      contentRange: `bytes ${startByte}-${endByte - 1}/${buffer.length}`
-    };
-  };
-
-  const uploadFile = async (file: File) => {
-    try {
-      const fileContent = await readFile(file);
-      console.log(fileContent);
-      const fileBlob = new Blob([fileContent], { type: file.type });
-      const form = new FormData();
-      const metadata = {
-        name: file.name,
-        mimeType: file.type,
-        parents: ["root"]
-      };
-      form.append(
-        "metadata",
-        new Blob([JSON.stringify(metadata)], { type: "application/json" })
-      );
-      form.append("file", fileBlob);
-      const result = await fetch(
-        `https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id`,
-        {
-          headers: getAuthHeader(),
-          method: "POST",
-          body: form
-        }
-      );
-      const json = await result.json();
-      console.log(json);
-    } catch (e) {}
-  };
   // const authToken = getAccessToken();
   // customAjax("https://www.googleapis.com/drive/v3/about?fields=*", {
   //   method: "GET",
@@ -227,13 +153,23 @@ const Test: React.FC<any> = props => {
   // })
 
   return (
-    <div {...getRootProps()}>
-      <input {...getInputProps()} />
-      {isDragActive ? (
-        <p>Drop the files here ...</p>
-      ) : (
-        <p>Drag 'n' drop some files here, or click to select files</p>
-      )}
+    <div>
+      <div {...getRootProps()}>
+        <input {...getInputProps()} />
+        {isDragActive ? (
+          <p>Drop the files here ...</p>
+        ) : (
+          <p>Drag 'n' drop some files here, or click to select files</p>
+        )}
+      </div>
+      <LinearProgress
+        variant="buffer"
+        value={completed}
+        valueBuffer={bufferCompleted}
+      />
+      <audio controls={true} crossOrigin="anonymous">
+        <source src="https://drive.google.com/open?id=1WPeGALRq6r0ix-HMXR_4r8nGNzhqf22Z" />
+      </audio>
     </div>
   );
 };
