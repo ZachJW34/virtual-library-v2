@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux';
-import { Action, ActionTypes } from '../constants/action-types';
-import { Bookshelf } from '../models/google-bookshelves';
-import { Volume } from '../models/google-volumes';
+import { combineReducers } from "redux";
+import { Action, ActionTypes } from "../constants/action-types";
+import { Bookshelf } from "../models/google-bookshelves";
+import { Volume } from "../models/google-volumes";
 
 export type BookshelvesState = {
   bookshelvesById: { [id: string]: Bookshelf };
@@ -30,7 +30,7 @@ const volumesByBookshelfId = (
     case ActionTypes.FETCH_BOOKSHELVES_SUCCESS:
       return { ...state, ...action.payload.volumesByBookshelfId };
 
-    case ActionTypes.FETCH_ADD_VOLUME_TO_BOOKSHELF_SUCCESS:
+    case ActionTypes.ADD_VOLUME_TO_BOOKSHELF_SUCCESS:
       return {
         ...state,
         [action.payload.bookshelfId]: [
@@ -39,7 +39,7 @@ const volumesByBookshelfId = (
         ]
       };
 
-    case ActionTypes.FETCH_DELETE_VOLUME_FROM_BOOKSHELF_SUCCESS:
+    case ActionTypes.DELETE_VOLUME_FROM_BOOKSHELF_SUCCESS:
       const filteredBookshelf = state[action.payload.bookshelfId].filter(
         id => id !== action.payload.volume.id
       );
@@ -58,7 +58,7 @@ const volumesById = (state: { [id: string]: Volume } = {}, action: Action) => {
     case ActionTypes.FETCH_BOOKSHELVES_SUCCESS:
       return { ...state, ...action.payload.volumesById };
 
-    case ActionTypes.FETCH_ADD_VOLUME_TO_BOOKSHELF_SUCCESS:
+    case ActionTypes.ADD_VOLUME_TO_BOOKSHELF_SUCCESS:
       return {
         ...state,
         [action.payload.volume.id]: action.payload.volume
@@ -92,4 +92,8 @@ export const getBookshelfById = (
 export const getVolumesByBookshelfId = (
   { volumesByBookshelfId, volumesById }: BookshelvesState,
   id: string
-): Volume[] => (volumesByBookshelfId[id] || []).map(volumeId => volumesById[volumeId]);
+): Volume[] =>
+  (volumesByBookshelfId[id] || []).map(volumeId => volumesById[volumeId]);
+
+export const getVolumeById = ({ volumesById }: BookshelvesState, id: string) =>
+  volumesById[id];

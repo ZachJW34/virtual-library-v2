@@ -8,11 +8,13 @@ import RatingsComponent from '../ratings/Ratings';
 
 type Props = {
   volume: Volume;
+  clickTileCallback: (volume: Volume) => void
 };
 
 const VolumeHighlightComponent: React.FC<Props> = props => {
   return (
     <div
+      onClick={() => props.clickTileCallback(props.volume)}
       className={styles.container}
       style={{
         backgroundColor: getVibrant(

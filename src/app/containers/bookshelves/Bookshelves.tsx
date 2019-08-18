@@ -1,23 +1,22 @@
-import React, { FunctionComponent } from "react";
-import { Route } from "react-router-dom";
-import { Bookshelf } from "../../models/google-bookshelves";
-import BookshelfVolumes from "../bookshelf-volumes/BookshelfVolumes";
+import React, { FunctionComponent, useEffect, useState } from "react";
+import {RouteComponentProps, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { getBookshelves } from "../../reducers/index";
 import { Tabs } from "@material-ui/core";
 import TabWithLink from "../../components/tab-with-link/TabWithLink";
+import BookshelfVolumes from '../bookshelf-volumes/BookshelfVolumes';
 
-type Props = {
-  startTab: string | undefined;
-  bookshelves: Bookshelf[];
-};
-
-const BookshelvesComponent: FunctionComponent<Props> = props => {
-  const [tab, setTab] = React.useState(
-    props.startTab
-      ? props.startTab
-      : props.bookshelves[0]
-      ? props.bookshelves[0].id
-      : undefined
+const Bookshelves: FunctionComponent<RouteComponentProps> = props => {
+  const bookshelves = useSelector(getBookshelves);
+  const [tab, setTab] = useState(
+    ((res: RegExpMatchArray | null) => (res ? res[1] : bookshelves[0].id))(
+      props.history.location.pathname.match(/\/home\/bookshelves\/(\d+)/)
+    )
   );
+
+  useEffect(() => {
+    props.history.push(`${props.match.path}/${tab}`);
+  }, [])
 
   return (
     <div>
@@ -27,7 +26,7 @@ const BookshelvesComponent: FunctionComponent<Props> = props => {
         variant="fullWidth"
         centered={true}
       >
-        {props.bookshelves.map(bookshelf => (
+        {bookshelves.map(bookshelf => (
           <TabWithLink
             value={bookshelf.id}
             key={bookshelf.id}
@@ -44,4 +43,4 @@ const BookshelvesComponent: FunctionComponent<Props> = props => {
   );
 };
 
-export default BookshelvesComponent;
+export default Bookshelves;

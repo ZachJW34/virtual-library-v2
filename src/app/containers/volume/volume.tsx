@@ -1,7 +1,6 @@
-import { LinearProgress } from '@material-ui/core';
-import { Howl } from 'howler';
-import React, { useCallback, useEffect, useState } from 'react';
-import { useDropzone } from 'react-dropzone';
+import { LinearProgress, CircularProgress } from "@material-ui/core";
+import React, { useCallback, useState, useEffect } from "react";
+import { useDropzone } from "react-dropzone";
 import {
   doResumableChunkedUpload,
   doSimpleResumableUpload,
@@ -9,41 +8,68 @@ import {
   getUploadType,
   ProgressCallback,
   UploadTypes
-  } from '../../utils/driveHelper';
-import { getAuthHeader } from '../../utils/tokenHelper';
+} from "../../utils/driveHelper";
+import { useDispatch, useSelector } from "react-redux";
+import * as fromRoot from "../../reducers/index";
+import * as driveActions from "../../actions/drive";
+import { RouteComponentProps } from "react-router";
+import { LOADING_TYPES } from "../../constants/action-types";
 
-const Test: React.FC<any> = props => {
+const Volume: React.FC<
+  RouteComponentProps<{ [key: string]: string }>
+> = props => {
+  const [initialLoad, setInitialLoad] = useState(true);
+  const volumeId = props.match.params["id"];
+  const volume = useSelector(fromRoot.getVolumeById(volumeId));
+  const volumeFolder = useSelector((state: fromRoot.State) =>
+    fromRoot.getVolumeFolderById(state, volumeId)
+  );
+  const updateState = useSelector((state: fromRoot.State) =>
+    fromRoot.getUpdateState(state, [LOADING_TYPES.FETCH_VOLUME_FOLDER])
+  );
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(driveActions.fetchVolumeFolder(volumeId));
+    setInitialLoad(false);
+  }, []);
+
   const [completed, setCompleted] = useState(0);
   const [bufferCompleted, setBufferCompleted] = useState(0);
 
   const progressCallback: ProgressCallback = useCallback(
     (percentComplete, bufferPercentComplete) => {
-      console.log({ percentComplete, bufferPercentComplete });
       setCompleted(percentComplete);
       setBufferCompleted(bufferPercentComplete);
     },
     []
   );
 
-  const onDrop = useCallback(
-    async (acceptedFiles: File[], rejectedFiles: File[]) => {
-      for (const file of acceptedFiles) {
-        const uploadType = getUploadType(file.size);
-        let result;
-        switch (uploadType) {
-          case UploadTypes.SIMPLE:
-            result = await doSimpleUpload(file);
-          case UploadTypes.SIMPLE_RESUMABLE:
-            result = await doSimpleResumableUpload(file);
-          case UploadTypes.RESUMABLE_CHUNKED:
-            result = await doResumableChunkedUpload(file, progressCallback);
-          default:
-        }
-        console.log(result);
+  const onDrop = async (acceptedFiles: File[], rejectedFiles: File[]) => {
+    for (const file of acceptedFiles) {
+      const uploadType = getUploadType(file.size);
+      console.log(uploadType);
+      let result;
+      switch (uploadType) {
+        case UploadTypes.SIMPLE:
+          result = await doSimpleUpload(file, volumeFolder.id);
+          break;
+        case UploadTypes.SIMPLE_RESUMABLE:
+          result = await doSimpleResumableUpload(file, volumeFolder.id);
+          break;
+        case UploadTypes.RESUMABLE_CHUNKED:
+          result = await doResumableChunkedUpload(
+            file,
+            volumeFolder.id,
+            progressCallback
+          );
+          break;
+        default:
+          return;
       }
-    },
-    []
-  );
+      console.log(result);
+    }
+  };
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   // useEffect(() => {
@@ -154,24 +180,30 @@ const Test: React.FC<any> = props => {
 
   return (
     <div>
-      <div {...getRootProps()}>
-        <input {...getInputProps()} />
-        {isDragActive ? (
-          <p>Drop the files here ...</p>
-        ) : (
-          <p>Drag 'n' drop some files here, or click to select files</p>
-        )}
-      </div>
-      <LinearProgress
-        variant="buffer"
-        value={completed}
-        valueBuffer={bufferCompleted}
-      />
-      <audio controls={true} crossOrigin="anonymous">
-        <source src="https://drive.google.com/open?id=1WPeGALRq6r0ix-HMXR_4r8nGNzhqf22Z" />
-      </audio>
+      {updateState.isLoading || initialLoad ? (
+        <CircularProgress />
+      ) : updateState.isError ? (
+        "Error"
+      ) : (
+        <>
+          <div {...getRootProps()}>
+            <input {...getInputProps()} />
+            {isDragActive ? (
+              <p>Drop the files here ...</p>
+            ) : (
+              <p>Drag 'n' drop some files here, or click to select files</p>
+            )}
+          </div>
+          <LinearProgress
+            variant="buffer"
+            value={completed}
+            valueBuffer={bufferCompleted}
+          />
+          <img />
+        </>
+      )}
     </div>
   );
 };
 
-export default Test;
+export default Volume;

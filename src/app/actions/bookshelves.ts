@@ -23,7 +23,7 @@ export const fetchBookshelves = (): ThunkAction => {
   };
 };
 
-export const fetchAddVolumeToBookshelf = (
+export const addVolumeToBookshelf = (
   bookshelfId: string,
   volume: Volume
 ): ThunkAction => {
@@ -31,7 +31,7 @@ export const fetchAddVolumeToBookshelf = (
     if (!isAccessTokenValid()) {
       return dispatch(push('/login'));
     }
-    dispatch(fetchAddVolumeToBookshelfRequest());
+    dispatch(addVolumeToBookshelfRequest());
     try {
       const response = await fetch('/bookshelves/add-volume', {
         method: 'POST',
@@ -46,17 +46,17 @@ export const fetchAddVolumeToBookshelf = (
       if (response.ok) {
         const body: Volume = await response.json();
         console.log(body);
-        return dispatch(fetchAddVolumeToBookshelfSuccess({ bookshelfId, volume: body }))
+        return dispatch(addVolumeToBookshelfSuccess({ bookshelfId, volume: body }))
       } else {
-        return dispatch(fetchAddVolumeToBookshelfFailure());
+        return dispatch(addVolumeToBookshelfFailure());
       }
     } catch(e) {
-      return dispatch(fetchAddVolumeToBookshelfFailure());
+      return dispatch(addVolumeToBookshelfFailure());
     }
   };
 };
 
-export const fetchDeleteVolumeFromBookshelf = (
+export const deleteVolumeFromBookshelf = (
   bookshelfId: string,
   volume: Volume
 ): ThunkAction => {
@@ -64,7 +64,7 @@ export const fetchDeleteVolumeFromBookshelf = (
     if (!isAccessTokenValid()) {
       return dispatch(push('/login'));
     }
-    dispatch(fetchDeleteVolumeFromBookshelfRequest());
+    dispatch(deleteVolumeFromBookshelfRequest());
     const headers = getAuthHeader();    
     const response = await fetch(
       `/bookshelves/delete-volume${addQueryParams({
@@ -75,8 +75,8 @@ export const fetchDeleteVolumeFromBookshelf = (
     );
     const body: { didSucceed: boolean } = await response.json();
     return body.didSucceed
-      ? dispatch(fetchDeleteVolumeFromBookshelfSuccess({ bookshelfId, volume }))
-      : dispatch(fetchDeleteVolumeFromBookshelfFailure());
+      ? dispatch(deleteVolumeFromBookshelfSuccess({ bookshelfId, volume }))
+      : dispatch(deleteVolumeFromBookshelfFailure());
   };
 };
 
@@ -93,34 +93,34 @@ const fetchBookShelvesFailure = (): Action => ({
   type: ActionTypes.FETCH_BOOKSHELVES_FAILURE
 });
 
-const fetchAddVolumeToBookshelfRequest = (): Action => ({
-  type: ActionTypes.FETCH_ADD_VOLUME_TO_BOOKSHELF_REQUEST
+const addVolumeToBookshelfRequest = (): Action => ({
+  type: ActionTypes.ADD_VOLUME_TO_BOOKSHELF_REQUEST
 });
 
-const fetchAddVolumeToBookshelfSuccess = (payload: {
+const addVolumeToBookshelfSuccess = (payload: {
   bookshelfId: string;
   volume: Volume;
 }): Action => ({
-  type: ActionTypes.FETCH_ADD_VOLUME_TO_BOOKSHELF_SUCCESS,
+  type: ActionTypes.ADD_VOLUME_TO_BOOKSHELF_SUCCESS,
   payload
 });
 
-const fetchAddVolumeToBookshelfFailure = (): Action => ({
-  type: ActionTypes.FETCH_ADD_VOLUME_TO_BOOKSHELF_FAILURE
+const addVolumeToBookshelfFailure = (): Action => ({
+  type: ActionTypes.ADD_VOLUME_TO_BOOKSHELF_FAILURE
 });
 
-const fetchDeleteVolumeFromBookshelfRequest = (): Action => ({
-  type: ActionTypes.FETCH_DELETE_VOLUME_FROM_BOOKSHELF_REQUEST
+const deleteVolumeFromBookshelfRequest = (): Action => ({
+  type: ActionTypes.DELETE_VOLUME_FROM_BOOKSHELF_REQUEST
 });
 
-const fetchDeleteVolumeFromBookshelfSuccess = (payload: {
+const deleteVolumeFromBookshelfSuccess = (payload: {
   bookshelfId: string;
   volume: Volume;
 }): Action => ({
-  type: ActionTypes.FETCH_DELETE_VOLUME_FROM_BOOKSHELF_SUCCESS,
+  type: ActionTypes.DELETE_VOLUME_FROM_BOOKSHELF_SUCCESS,
   payload
 });
 
-const fetchDeleteVolumeFromBookshelfFailure = (): Action => ({
-  type: ActionTypes.FETCH_DELETE_VOLUME_FROM_BOOKSHELF_FAILURE
+const deleteVolumeFromBookshelfFailure = (): Action => ({
+  type: ActionTypes.DELETE_VOLUME_FROM_BOOKSHELF_FAILURE
 });

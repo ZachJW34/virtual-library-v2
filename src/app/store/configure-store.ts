@@ -3,6 +3,7 @@ import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import * as bookshelvesActions from '../actions/bookshelves';
 import * as userActions from '../actions/user';
+import * as driveActions from '../actions/drive';
 import { rootReducer } from '../reducers';
 import { history } from '../reducers/history';
 
@@ -12,6 +13,7 @@ export const configureStore = () => {
   const actionCreators = {
     ...bookshelvesActions,
     ...userActions,
+    ...driveActions
   };
 
   middleWare.push(thunk);

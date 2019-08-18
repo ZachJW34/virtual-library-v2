@@ -1,4 +1,9 @@
-import { getAuthHeader } from './tokenHelper';
+import { getAuthHeader } from "./tokenHelper";
+import {
+  ListSearch,
+  ListSearchResponse,
+  FileResponse
+} from "../models/google-drive";
 
 export enum UploadTypes {
   SIMPLE = 1,
@@ -9,11 +14,59 @@ export enum UploadTypes {
 const MB = 1024 * 1024;
 const CHUNK_SIZE = 5 * MB;
 const MAX_CHUNK_SIZE = 20 * MB;
+const FOLDER_MIME_TYPE = "application/vnd.google-apps.folder";
+const ROOT_FOLDER_NAME = "virtual-library";
 
 export type ProgressCallback = (
   percentComplete: number,
   bufferPercentComplete: number
 ) => void;
+
+export const createDriveRoot = async () => {
+  try {
+    const listResponse = await getList({
+      q: `mimeType = '${FOLDER_MIME_TYPE}' and name = '${ROOT_FOLDER_NAME}'`
+    });
+    if (listResponse.files.length) {
+      return listResponse.files[0];
+    }
+    const fileResponse = await createFolder("virtual-library", ["root"]);
+    return fileResponse;
+  } catch (e) {
+    console.log(e);
+    throw new Error(e);
+  }
+};
+
+export const createVolumeRoot = async (id: string, parent: string) => {
+  try {
+    const listResponse = await getList({
+      q: `mimeType = '${FOLDER_MIME_TYPE}' and name = '${id}' and parents in '${parent}'`
+    });
+    if (listResponse.files.length) {
+      return listResponse.files[0]
+    }
+    const fileResponse = await createFolder(id, [parent]);
+    return fileResponse;
+  } catch (e) {
+    console.log(e);
+    throw new Error(e);
+  }
+};
+
+export const getList = async (
+  search: ListSearch
+): Promise<ListSearchResponse> => {
+  const result = await fetch(
+    "https://www.googleapis.com/drive/v3/files?q=" +
+      encodeURIComponent(search.q),
+    {
+      method: "GET",
+      headers: getAuthHeader()
+    }
+  );
+  return result.json();
+};
 
 export const getUploadType = (size: number) => {
   return size >= CHUNK_SIZE
@@ -23,7 +76,7 @@ export const getUploadType = (size: number) => {
     : UploadTypes.SIMPLE;
 };
 
-export const doSimpleUpload = async (file: File) => {
+export const doSimpleUpload = async (file: File, parent: string) => {
   try {
     const fileContent = await readFile(file);
     const form = new FormData();
@@ -34,7 +87,7 @@ export const doSimpleUpload = async (file: File) => {
           JSON.stringify({
             name: file.name,
             mimeType: file.type,
-            parents: ["root"]
+            parents: [parent]
           })
         ],
         { type: "application/json" }
@@ -49,25 +102,26 @@ export const doSimpleUpload = async (file: File) => {
         body: form
       }
     );
-    const json = await result.json();
-    return json.id;
+    return result.json() as Promise<FileResponse>;
   } catch (e) {
     console.error(e);
     throw new Error(e);
   }
 };
 
-export const doSimpleResumableUpload = async (file: File) => {};
+export const doSimpleResumableUpload = async (file: File, parent: string) => {};
 
 export const doResumableChunkedUpload = async (
   file: File,
+  parent: string,
   progressCallback: ProgressCallback
 ) => {
   try {
     const fileContent = await readFile(file);
     const body = JSON.stringify({
       name: file.name,
-      mimeType: file.type
+      mimeType: file.type,
+      parents: [parent]
     });
     const response = await fetch(
       "https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable",
@@ -129,6 +183,40 @@ export const doResumableChunkedUpload = async (
       complete: true,
       response: undefined
     };
+  }
+};
+
+const createFolder = async (
+  name: string,
+  parents: string[]
+): Promise<FileResponse> => {
+  try {
+    const form = new FormData();
+    form.append(
+      "metadata",
+      new Blob(
+        [
+          JSON.stringify({
+            name,
+            parents,
+            mimeType: FOLDER_MIME_TYPE
+          })
+        ],
+        { type: "application/json" }
+      )
+    );
+    const result = await fetch(
+      `https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id`,
+      {
+        headers: getAuthHeader(),
+        method: "POST",
+        body: form
+      }
+    );
+    return result.json();
+  } catch (e) {
+    console.error(e);
+    throw new Error(e);
   }
 };
 

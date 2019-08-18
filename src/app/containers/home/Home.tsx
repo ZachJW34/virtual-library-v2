@@ -1,50 +1,77 @@
-import { CircularProgress } from '@material-ui/core';
-import { ConnectedRouterProps, push } from 'connected-react-router';
-import React, { FunctionComponent, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Redirect } from 'react-router-dom';
-import styles from './Home.module.css';
-import * as bookshelvesActions from '../../actions/bookshelves';
-import { LOADING_TYPES } from '../../constants/action-types';
-import { getBookshelves, getUpdateState, State } from '../../reducers';
-import { isAccessTokenValid } from '../../utils/tokenHelper';
-import BookshelvesComponent from '../bookshelves/Bookshelves';
-import Test from '../test/Test';
+import { CircularProgress } from "@material-ui/core";
+import React, { FunctionComponent, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Redirect, Route, Switch, Link } from "react-router-dom";
+import styles from "./Home.module.css";
+import * as bookshelvesActions from "../../actions/bookshelves";
+import * as driveActions from '../../actions/drive';
+import { LOADING_TYPES } from "../../constants/action-types";
+import { getUpdateState, State } from "../../reducers";
+import { isAccessTokenValid } from "../../utils/tokenHelper";
+import Bookshelves from "../bookshelves/Bookshelves";
+import { RouteComponentProps } from "react-router";
+import Volume from '../volume/volume';
+import { createDriveRoot } from "../../utils/driveHelper";
 
-type Props = {
-  push: typeof push;
-} & ConnectedRouterProps;
+const HomeComponent: FunctionComponent<RouteComponentProps> = props => {
+  if (!isAccessTokenValid()) {
+    props.history.push('/login');
+  }
 
-const HomeComponent: FunctionComponent<Props> = props => {
-  const bookshelves = useSelector(getBookshelves);
+  const [initialLoad, setInitialLoad] = useState(true);
+
   const updateState = useSelector((state: State) =>
-    getUpdateState(state, [LOADING_TYPES.FETCH_BOOKSHELVES])
+    getUpdateState(state, [LOADING_TYPES.FETCH_BOOKSHELVES, LOADING_TYPES.FETCH_ROOT_FOLDER])
   );
+
   const dispatch = useDispatch();
-
-  const redirect = !isAccessTokenValid() ? <Redirect to="/login" /> : null;
-  const [startTab, setStartTab] = useState(
-    ((res: RegExpMatchArray | null) => (res ? res[1] : undefined))(
-      props.history.location.pathname.match(/\/home\/bookshelves\/(\d+)/)
-    )
-  );
-
   useEffect(() => {
     dispatch(bookshelvesActions.fetchBookshelves());
+    dispatch(driveActions.fetchRootFolder())
+    setInitialLoad(false)
   }, []);
+
+  const redirect = !isAccessTokenValid() ? <Redirect to="/login" /> : null;
+
+  const home = (
+    <div>
+      <Link to={props.match.path + "/bookshelves"}>
+        <button>Bookshelves</button>
+      </Link>
+    </div>
+  );
 
   return (
     <div className={styles.container}>
-      {redirect}
-      {updateState.isLoading ? (
+      {(updateState.isLoading || initialLoad) ? (
         <CircularProgress />
       ) : updateState.isError ? (
         "Error"
       ) : (
-        <BookshelvesComponent startTab={startTab} bookshelves={bookshelves} />
+        <Switch>
+          <Route exact={true} path={props.match.path} render={() => home} />
+          <Route
+            path={props.match.path + "/bookshelves"}
+            component={Bookshelves}
+          />
+          <Route path={props.match.path + '/volume/:id'} component={Volume}/>
+        </Switch>
       )}
-      <Test></Test>
     </div>
+    // <div className={styles.container}>
+    //   {redirect}
+    //   {updateState.isLoading ? (
+    //     <CircularProgress />
+    //   ) : updateState.isError ? (
+    //     "Error"
+    //   ) : (
+    //     <Switch>
+    //       <Route path="/home/bookshelves" component={Bookshelves} />
+    //     </Switch>
+    //     // <Bookshelves startTab={startTab} bookshelves={bookshelves} />
+    //   )}
+    //   {/* <Test></Test> */}
+    // </div>
   );
 };
 

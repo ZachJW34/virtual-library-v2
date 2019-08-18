@@ -18,6 +18,13 @@ const VolumeTileComponent: React.FC<Props> = props => {
     <div
       className={styles.container}
       onClick={() => props.selectVolume(props.volume)}
+      style={{
+        backgroundColor: getVibrant(
+          props.volume.volumeInfo.palette,
+          "inherit",
+          0.5
+        )
+      }}
     >
       <img
         id={props.volume.id}

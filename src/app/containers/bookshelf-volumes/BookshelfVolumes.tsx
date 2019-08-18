@@ -24,7 +24,7 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   const addVolumeToBookshelf = useCallback(
     volume =>
       dispatch(
-        bookshelvesActions.fetchAddVolumeToBookshelf(bookshelf.id, volume)
+        bookshelvesActions.addVolumeToBookshelf(bookshelf.id, volume)
       ),
     [dispatch]
   );
@@ -32,20 +32,12 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   const deleteVolumeFromBookshelf = useCallback(
     volume =>
       dispatch(
-        bookshelvesActions.fetchDeleteVolumeFromBookshelf(bookshelf.id, volume)
+        bookshelvesActions.deleteVolumeFromBookshelf(bookshelf.id, volume)
       ),
     [dispatch]
   );
 
   const [volumeSearch, setVolumeSearch] = useState({} as VolumeSearchResponse);
-  const [selectedVolume, setSelectedVolume] = useState(
-    !!volumes.length ? volumes[0] : undefined
-  );
-
-  useEffect(
-    () => setSelectedVolume(!!volumes.length ? volumes[0] : undefined),
-    [props.match.params.bookshelfId]
-  );
 
   const searchVolumes = (params: VolumeSearchParams) => {
     fetch(`/volumes${addQueryParams(params)}`, {
@@ -56,16 +48,16 @@ const BookshelfVolumesComponent: React.FC<Props> = props => {
   };
 
   const selectVolume = (volume: Volume) => {
-    setSelectedVolume(volume);
+    props.history.push(`/home/volume/${volume.id}`)
   };
 
   return (
     <div>
-      {selectedVolume ? (
+      {/* {selectedVolume ? (
         <div className={styles.selected}>
-          <VolumeHighlightComponent volume={selectedVolume} />
+          <VolumeHighlightComponent volume={selectedVolume} clickTileCallback={clickTileCallback}/>
         </div>
-      ) : null}
+      ) : null} */}
       <div className={styles["volumes-container"]}>
         {volumes.map(volume => (
           <div key={volume.id} className={styles["volume-tile"]}>
