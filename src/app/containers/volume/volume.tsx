@@ -1,19 +1,19 @@
-import { LinearProgress, CircularProgress } from "@material-ui/core";
-import React, { useCallback, useState, useEffect } from "react";
-import { useDropzone } from "react-dropzone";
+import { CircularProgress, LinearProgress } from '@material-ui/core';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useDropzone } from 'react-dropzone';
+import { useDispatch, useSelector } from 'react-redux';
+import { RouteComponentProps } from 'react-router';
+import * as driveActions from '../../actions/drive';
+import { LOADING_TYPES } from '../../constants/action-types';
+import * as fromRoot from '../../reducers/index';
 import {
   doResumableChunkedUpload,
   doSimpleResumableUpload,
-  doSimpleUpload,
   getUploadType,
   ProgressCallback,
   UploadTypes
-} from "../../utils/driveHelper";
-import { useDispatch, useSelector } from "react-redux";
-import * as fromRoot from "../../reducers/index";
-import * as driveActions from "../../actions/drive";
-import { RouteComponentProps } from "react-router";
-import { LOADING_TYPES } from "../../constants/action-types";
+  } from '../../utils/driveHelper';
+import DriveImageList from '../drive-image-list/DriveImageList';
 
 const Volume: React.FC<
   RouteComponentProps<{ [key: string]: string }>
@@ -25,7 +25,10 @@ const Volume: React.FC<
     fromRoot.getVolumeFolderById(state, volumeId)
   );
   const updateState = useSelector((state: fromRoot.State) =>
-    fromRoot.getUpdateState(state, [LOADING_TYPES.FETCH_VOLUME_FOLDER])
+    fromRoot.getUpdateState(state, [
+      LOADING_TYPES.FETCH_VOLUME_FOLDER,
+      LOADING_TYPES.GET_FILE_LIST_METADATA
+    ])
   );
 
   const dispatch = useDispatch();
@@ -52,7 +55,7 @@ const Volume: React.FC<
       let result;
       switch (uploadType) {
         case UploadTypes.SIMPLE:
-          result = await doSimpleUpload(file, volumeFolder.id);
+          dispatch(driveActions.addSimpleFile(volumeId, file));
           break;
         case UploadTypes.SIMPLE_RESUMABLE:
           result = await doSimpleResumableUpload(file, volumeFolder.id);
@@ -67,7 +70,7 @@ const Volume: React.FC<
         default:
           return;
       }
-      console.log(result);
+      // console.log(result);
     }
   };
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
@@ -199,7 +202,7 @@ const Volume: React.FC<
             value={completed}
             valueBuffer={bufferCompleted}
           />
-          <img />
+          <DriveImageList volumeId={volumeId} />
         </>
       )}
     </div>

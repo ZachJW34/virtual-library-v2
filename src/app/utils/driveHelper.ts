@@ -1,9 +1,5 @@
-import { getAuthHeader } from "./tokenHelper";
-import {
-  ListSearch,
-  ListSearchResponse,
-  FileResponse
-} from "../models/google-drive";
+import { getAuthHeader } from './tokenHelper';
+import { FileResponse, ListSearch, ListSearchResponse } from '../models/google-drive';
 
 export enum UploadTypes {
   SIMPLE = 1,
@@ -44,7 +40,7 @@ export const createVolumeRoot = async (id: string, parent: string) => {
       q: `mimeType = '${FOLDER_MIME_TYPE}' and name = '${id}' and parents in '${parent}'`
     });
     if (listResponse.files.length) {
-      return listResponse.files[0]
+      return listResponse.files[0];
     }
     const fileResponse = await createFolder(id, [parent]);
     return fileResponse;
@@ -66,6 +62,17 @@ export const getList = async (
     }
   );
   return result.json();
+};
+
+export const downloadSimpleFile = async (id: string) => {
+  try {
+    const response = await fetch(
+      `https://www.googleapis.com/drive/v3/files/${id}?alt=media`,
+      { headers: getAuthHeader() }
+    );
+    const blob = await response.blob();
+    return blob;
+  } catch (e) {}
 };
 
 export const getUploadType = (size: number) => {
@@ -95,7 +102,7 @@ export const doSimpleUpload = async (file: File, parent: string) => {
     );
     form.append("file", new Blob([fileContent], { type: file.type }));
     const result = await fetch(
-      `https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id`,
+      `https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id,mimeType,name`,
       {
         headers: getAuthHeader(),
         method: "POST",
